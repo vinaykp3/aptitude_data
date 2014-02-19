@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1330818207">
+    <data-source source="LOCAL" name="Rails interview: development" uuid="e59afdd2-6159-4a04-a8dc-a7e298166fa3">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/interview_development</jdbc-url>
+      <user-name>jeevaraj</user-name>
+      <user-password>dfd9dfdcdfcddfc7dfcbdfc6dfcfdfc4dfcbdfc2dfcbdfc6dfc6dfc3df9b</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails interview: test" uuid="c6cfa8a0-8174-42db-9ad8-f4412e757644">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/interview_test</jdbc-url>
+      <user-name>jeevaraj</user-name>
+      <user-password>dfd9dfdcdfcddfc7dfcbdfc6dfcfdfc4dfcbdfc2dfcbdfc6dfc6dfc3df9b</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails interview: production" uuid="b9b5b05c-606d-4a1c-be61-45b1eeec3ec9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/interview_production</jdbc-url>
+      <user-name>jeevaraj</user-name>
+      <user-password>dfd9dfdcdfcddfc7dfcbdfc6dfcfdfc4dfcbdfc2dfcbdfc6dfc6dfc3df9b</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

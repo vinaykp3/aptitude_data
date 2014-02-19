@@ -1,0 +1,5 @@
+%table
+  .question-table-th
+    - @user1.each do |answer|
+      %tr
+        %th{:colspan=>2} #{answer.student_id.inspect}  #{answer.name.capitalize.inspect} #{answer.option}

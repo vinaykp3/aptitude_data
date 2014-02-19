@@ -1,0 +1,18 @@
+#form-container
+  %br
+  %p
+    %storng Sl.no:
+    =@user.sl_no
+  %p
+    %strong Question:
+    =@user.question
+  %p
+    %strong Options:
+    %li=@user.option_a
+    %li=@user.option_b
+    %li=@user.option_c
+  %p
+    %strong Answer
+    =@user.answer
+%br
+  = link_to 'BACK',questions_path

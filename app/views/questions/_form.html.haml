@@ -1,0 +1,35 @@
+
+#form-container
+  = form_for @user,url:{action: :create} do |f|
+
+    - if @user.errors.any?
+      #error_explanation
+        %h3
+        =pluralize(@user.errors.count,"error")
+        Prohibited to save this question!
+      %ul
+      =@user.errors.full_messages do |msg|
+        %li= msg
+
+    #form-button
+      %p
+        = f.number_field :sl_no,:placeholder=>"Sl.no",class: :tb5
+      %p
+        =f.label :Question
+        =f.text_field :question,class: :tb5
+      %p
+        =f.label :Options_a
+        =f.text_field :option_a,class: :tb5
+      %p
+        =f.label :Options_b
+        =f.text_field :option_b,class: :tb5
+      %p
+        =f.label :Options_c
+        =f.text_field :option_c,class: :tb5
+      %p
+        =f.label :Answer
+        =f.text_field :answer,class: :tb5
+      %p
+        = f.submit "Submit",class: :submit
+
+    #clear-container

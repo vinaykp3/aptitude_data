@@ -1,0 +1,27 @@
+#form-container
+  %h4
+    Time is now:
+  =Time.now.to_s(:long_ordinal)
+
+  %h3
+    The Student details are like this:
+
+  %p
+    %strong Name:
+    =@student.name
+  %p
+    %strong Qualification:
+    =@student.qualification
+
+  %p
+    %strong Age:
+    =@student.age
+
+    %p
+      %strong Email:
+      =@student.email
+    %br
+    %h4
+      Select one of the link to take test:
+
+    = link_to "New Test RUBY ",scores_path(:student_id=>@student.id)

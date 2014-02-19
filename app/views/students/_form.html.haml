@@ -1,0 +1,30 @@
+#form-container
+  %h3
+    Enter the students details
+    for registration:
+
+    = form_for @student  do |f|
+
+      -if @student.errors.any?
+        #error_explanation
+          =pluralize(@student.errors.count,'error')
+          Prohibited to save sudent details
+        %ul
+          =@student.errors.full_messages do |msg|
+            %li= msg
+      #form-button
+        %p
+          =f.text_field :name,:placeholder=>"Name"
+        %p
+          =f.text_field :qualification,:placeholder =>"Qualification"
+          %p
+            =f.text_field :age,:placeholder => "Age",class: :textbox
+          %p
+
+            =f.email_field :email,:placeholder => "Email"
+          %p
+            =f.password_field :password,:placeholder =>"password"
+          %p
+            =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation"
+          %p
+            =f.submit "Submit", class: :submit

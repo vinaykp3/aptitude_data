@@ -1,20 +1,21 @@
-%p
-=form_tag @score do
-  %table
-    %ul
-    -@score1.each do |option|
+#form-container
+  %p
+  =form_tag @score do
+    %table
+      %ul
+      -@score1.each do |option|
+        %tr
+          %th{:colspan=>1}#{option.sl_no}.#{option.question}
+        %tr
+          %td
+            =radio_button_tag "data[#{@student_id}][#{option.id}]", "a"
+            =option.option_a
+          %td
+            =radio_button_tag "data[#{@student_id}][#{option.id}]", "b"
+            =option.option_b
+          %td
+            =radio_button_tag "data[#{@student_id}][#{option.id}]", "c"
+            =option.option_c
       %tr
-        %th{:colspan=>1}#{option.sl_no}.#{option.question}
-      %tr
         %td
-          =radio_button_tag "data[#{@student_id}][#{option.id}]", "a"
-          =option.option_a
-        %td
-          =radio_button_tag "data[#{@student_id}][#{option.id}]", "b"
-          =option.option_b
-        %td
-          =radio_button_tag "data[#{@student_id}][#{option.id}]", "c"
-          =option.option_c
-    %tr
-      %td
-        =submit_tag "Submit Answer",class: :submit
+          =submit_tag "Submit Answer",class: :submit

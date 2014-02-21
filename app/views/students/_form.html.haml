@@ -13,18 +13,25 @@
           =@student.errors.full_messages do |msg|
             %li= msg
       #form-button
-        %p
-          =f.text_field :name,:placeholder=>"Name"
-        %p
-          =f.text_field :qualification,:placeholder =>"Qualification"
+        .clear_cls
+          %p
+            =f.text_field :name,:placeholder=>"Name"
+        .clear_cls
+          %p
+            =f.text_field :qualification,:placeholder =>"Qualification"
+        .clear_cls
           %p
             =f.text_field :age,:placeholder => "Age",class: :textbox
+        .clear_cls
           %p
-
             =f.email_field :email,:placeholder => "Email"
+        .clear_cls
           %p
             =f.password_field :password,:placeholder =>"password"
+        .clear_cls
           %p
             =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation"
-          %p
-            =f.submit "Submit", class: :submit
+
+        %p
+          =f.submit "Submit", class: :submit
+      .cls

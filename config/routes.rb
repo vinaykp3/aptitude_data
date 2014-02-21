@@ -7,6 +7,7 @@ Interview::Application.routes.draw do
 
   resources :questions do
    get "student_answer",:on=>:collection
+   get  "student_indivisual_answer",:on=>:collection
   end
 
   resources :scores ,:except => [:show,:destroy,:edit,:update] do

@@ -1,0 +1,10 @@
+#form-container
+  %table
+    .question-table-th
+      %tr
+        %th
+          %strong Options
+        - @student.each do |indivisual_answer|
+          %tr
+            %td
+              =indivisual_answer.option.first

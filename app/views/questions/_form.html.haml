@@ -1,4 +1,3 @@
-
 #form-container
   = form_for @user,url:{action: :create} do |f|
 
@@ -13,23 +12,31 @@
 
     #form-button
       %p
-        = f.number_field :sl_no,:placeholder=>"Sl.no",class: :tb5
-      %p
-        =f.label :Question
-        =f.text_field :question,class: :tb5
-      %p
-        =f.label :Options_a
-        =f.text_field :option_a,class: :tb5
-      %p
-        =f.label :Options_b
-        =f.text_field :option_b,class: :tb5
-      %p
-        =f.label :Options_c
-        =f.text_field :option_c,class: :tb5
-      %p
-        =f.label :Answer
-        =f.text_field :answer,class: :tb5
+        =f.label "Add Question",class: :input_note1
+      .clear_cls
+        %p
+          =f.label :sl_no,class: :input_note
+          = f.number_field :sl_no,class: :input_note2,:placeholder=>"Sl.no"
+      .clear_cls
+        %p
+          =f.label :Question,class: :input_note
+          =f.text_field :question,class: :tb5
+      .clear_cls
+        %p
+          =f.label :Options_a,class: :input_note
+          =f.text_field :option_a,class: :tb5
+      .clear_cls
+        %p
+          =f.label :Options_b,class: :input_note
+          =f.text_field :option_b,class: :tb5
+      .clear_cls
+        %p
+          =f.label :Options_c,class: :input_note
+          =f.text_field :option_c,class: :tb5
+      .clear_cls
+        %p
+          =f.label :Answer,class: :input_note
+          =f.text_field :answer,class: :tb5
       %p
         = f.submit "Submit",class: :submit
-
-    #clear-container
+  .cls

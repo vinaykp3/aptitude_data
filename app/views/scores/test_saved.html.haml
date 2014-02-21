@@ -1,5 +1,10 @@
-%table
-  -@student.each do |student|
-    %tr
-      #{student.name}
+#form-container
+  %table
+    -@student.each do |student|
+      %tr
+        %strong Name:
+        #{student.name}
+      %p
+        %strong Email:
+        #{student.email}
 

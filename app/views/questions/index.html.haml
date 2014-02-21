@@ -17,11 +17,8 @@ Listing all Question:
           %td= option.option_c
           %td= option.answer
 
-          %td= link_to 'Show', question_path(option) |
-              
-          %td= link_to 'Edit', edit_question_path(option) |
-
+          %td= link_to 'Show', question_path(option)
+          %td= link_to 'Edit', edit_question_path(option)
           %td= link_to "New", new_question_path(option)
-
           %td= link_to 'Destroy', question_path(option),
                 method: :delete, data: { confirm: 'Are you sure?'}

@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
 
-  http_basic_authenticate_with name:"relyon",password:"123"
+  #http_basic_authenticate_with name:"relyon",password:"123"
 
   layout 'application'
 
@@ -50,6 +50,11 @@ class QuestionsController < ApplicationController
 
   def student_answer
     @user1 = Question.fetch_answer
+  end
+
+  def student_indivisual_answer
+      @student = Question.fetch_students_details
+
   end
 
   def javascript

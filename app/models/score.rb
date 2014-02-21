@@ -15,7 +15,7 @@ class Score < ActiveRecord::Base
     student_data.each do |key,value|
       value.each do |question,option|
          answer = Score.new(:student_id=>key,:question_id=>question,:option=>option)
-        answer.save!
+        answer.save
       end
     end
   end

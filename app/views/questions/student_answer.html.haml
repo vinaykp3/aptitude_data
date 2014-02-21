@@ -1,5 +1,11 @@
-%table
-  .question-table-th
-    - @user1.each do |answer|
+#form-container
+  %table
+    .question-table-th
       %tr
-        %th{:colspan=>2} #{answer.student_id.inspect}  #{answer.name.capitalize.inspect} #{answer.option}
+        %th
+          %strong Name
+        - @user1.each do |answer|
+          %tr
+            %td
+              =answer.name
+              =link_to "show",student_indivisual_answer_questions_path

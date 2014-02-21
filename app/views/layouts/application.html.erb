@@ -8,22 +8,23 @@
   <%= javascript_include_tag ('application')%>
   <%= csrf_meta_tags %>
 
-
-
 </head>
+
 <body>
-
 <div class="header">
-
   <div class="sub-header1">
     <div class="sub-header2">
-      <nav>
+      <nav >
         <ul>
-          <li><%=link_to "Admin",new_question_path%>
+
+          <li><%=link_to "Question Master"%>
             <ul>
+              <li> <%=link_to "Home",students_path%></li>
+              <li> <%=link_to "Add Question",new_question_path%></li>
               <li> <%=link_to "View Answer",student_answer_questions_path%></li>
             </ul>
-          </li>
+            </li>
+
           <li><%=link_to "Student Registration",new_student_path%></li>
         </ul>
       </nav>

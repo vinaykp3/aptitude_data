@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c17b24f8-b926-40f3-80b7-1883e6747e6a" name="Default" comment="" />
+    <list default="true" id="c17b24f8-b926-40f3-80b7-1883e6747e6a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/db/migrate/20140113064533_create_posts.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/db/migrate/20140116052742_create_comments.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/controllers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/controllers/comments_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/controllers/posts_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/controllers/welcome_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/fixtures/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/fixtures/comments.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/fixtures/posts.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/helpers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/helpers/comments_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/helpers/posts_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/helpers/welcome_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/integration/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/mailers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/models/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/models/comment_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/models/post_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../blog/test/test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/EmployeeDetails_1K.xlsx.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/file.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/postgresql-9.1-901.jdbc3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/postgresql-9.2-1002.jdbc3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/profiles/1-#&lt;RSpec::Core::Example:0xe2a6580&gt;.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../saral-web-payroll/public/system/Backup/28-05-2013-14h56m47sData Backup.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/../blog/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/Gemfile.lock" afterPath="$PROJECT_DIR$/../blog/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/Gemfile.lock" afterPath="$PROJECT_DIR$/../saral-web-payroll/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/Gemfile" afterPath="$PROJECT_DIR$/../blog/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/posts/_form.html.haml" afterPath="$PROJECT_DIR$/../blog/app/views/posts/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/views/additional_salary_definitions/_heading_details.html.haml" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/views/additional_salary_definitions/_heading_details.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/views/reimbursement_allotments/_search.html.haml" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/views/reimbursement_allotments/_search.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/views/reimbursement_claims/_search.html.haml" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/views/reimbursement_claims/_search.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/models/additional_salary_definition.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/models/additional_salary_definition.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/additional_salary_definitions_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/additional_salary_definitions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/additional_salary_entries_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/additional_salary_entries_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/advance_filters_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/advance_filters_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/../blog/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/arrears_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/arrears_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/assign_roles_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/assign_roles_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/.idea/blog.iml" afterPath="$PROJECT_DIR$/../blog/.idea/blog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/bulk_payslip.html.haml" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/bulk_payslip.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/../blog/app/controllers/comments_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/models/company.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/models/company.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../blog/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/config/database.yml" afterPath="$PROJECT_DIR$/../blog/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/posts/edit.html.haml" afterPath="$PROJECT_DIR$/../blog/app/views/posts/edit.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/employee_details_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/employee_details_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/gratuities_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/gratuities_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/posts/index.html.haml" afterPath="$PROJECT_DIR$/../blog/app/views/posts/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/models/leave_allot_avail_setting.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/models/leave_allot_avail_setting.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/posts/new.html.haml" afterPath="$PROJECT_DIR$/../blog/app/views/posts/new.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/models/paymonth.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/models/paymonth.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/paymonths_controller.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/app/controllers/paymonths_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/models/post.rb" afterPath="$PROJECT_DIR$/../blog/app/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/assets/stylesheets/posts.css.scss" afterPath="$PROJECT_DIR$/../blog/app/assets/stylesheets/posts.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/../blog/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/config/routes.rb" afterPath="$PROJECT_DIR$/../blog/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../saral-web-payroll/config/routes.rb" afterPath="$PROJECT_DIR$/../saral-web-payroll/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/db/schema.rb" afterPath="$PROJECT_DIR$/../blog/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/app/views/posts/show.html.haml" afterPath="$PROJECT_DIR$/../blog/app/views/posts/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blog/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../blog/.idea/workspace.xml" />
+    </list>
     <ignored path="interview.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,7 +74,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -28,34 +92,16 @@
       <file leaf-file-name="questions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="6" selection-start="954" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1125">
+            <state line="70" column="32" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="809" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_indivisual_answer.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/questions/student_indivisual_answer.html.haml">
+      <file leaf-file-name="student_result.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/questions/student_result.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/questions/show.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="30" selection-start="305" selection-end="305" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
+            <state line="2" column="46" selection-start="83" selection-end="83" vertical-scroll-proportion="0.058027077" vertical-offset="0" max-vertical-offset="517">
               <folding />
             </state>
           </provider>
@@ -64,25 +110,7 @@
       <file leaf-file-name="question.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/question.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="73" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="score.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/score.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scores_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/scores_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state line="46" column="11" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="389" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -91,25 +119,61 @@
       <file leaf-file-name="student_answer.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/questions/student_answer.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="15" selection-start="0" selection-end="156" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="10" column="59" selection-start="226" selection-end="226" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="student_individual_answer.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/questions/student_individual_answer.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="113" selection-start="523" selection-end="523" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="students_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="9" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="71" selection-start="803" selection-end="803" vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="885">
+            <state line="35" column="55" selection-start="819" selection-end="853" vertical-scroll-proportion="-16.75" vertical-offset="123" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+            <state line="13" column="50" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="student.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/student.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -122,60 +186,63 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../saral-web-payroll" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.1/lib/active_record/model_schema.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/javascript.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/javascript.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/config/initializers/data_formats.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/_ruby.html.haml" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/score/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/score_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/score/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/score/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/score/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/scores/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/scores/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/scores/new.hmtl.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/questions.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/scores/test_saved.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_indivisual_answer.hmtl.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_indivisual_answer.html.haml" />
+        <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/questions/excel_generate.xlsx.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/excel_generatexlsx.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_view.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_answer.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scores.css.scss" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225071325_add_topic_to_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225071644_remove_topic_from_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225072843_remove_topic_from_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225083145_topic_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225090658_create_topic_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225091620_create_topics.rb" />
+        <option value="$PROJECT_DIR$/app/views/topics/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/topics/index.html.haml" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225100948_add_topic_id_to_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225101656_add_topic_id_to_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140201094138_create_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225071821_add_topic_to_questions.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140225102641_add_topic_id_to_questions.rb" />
         <option value="$PROJECT_DIR$/app/views/students/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/scores/show_answer.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/_student_answer.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/students.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/scores/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/students/test_saved.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/scores_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140218091945_delete_type_from_questions.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/score.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/students_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/score.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/students/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/questions.js.coffee" />
+        <option value="$PROJECT_DIR$/app/controllers/topics_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/topics/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/student.rb" />
+        <option value="$PROJECT_DIR$/app/models/topic.rb" />
+        <option value="$PROJECT_DIR$/app/views/questions/index.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/questions/edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/students/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/scores_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/score.rb" />
+        <option value="$PROJECT_DIR$/app/views/scores/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/questions/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/students/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/students/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/questions.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/scores/test_saved.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/scores/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/score.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/student_indivisual_answer.hmtl.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/student_answer.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/questions/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/question.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/student_indivisual_answer.html.haml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/../saral-web-payroll/app/models/company.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/students_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/question.rb" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_individual_answer.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/questions/student_result.html.haml" />
       </list>
     </option>
   </component>
@@ -185,7 +252,7 @@
     <option name="width" value="1368" />
     <option name="height" value="773" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -211,238 +278,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="students" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scores" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="questions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -511,6 +346,152 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,12 +499,18 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FullScreen" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="project.settings.patched" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/questions" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: interview">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -693,11 +680,19 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test: interview" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec: interview" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: interview" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: interview" />
+    <list size="12">
+      <item index="0" class="java.lang.String" itemvalue="Rails.Development: blog" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Development: saral-web-payroll" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: blog" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: saral-web-payroll" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.spec: blog" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.test: blog" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.test: interview" />
+      <item index="9" class="java.lang.String" itemvalue="Rake.spec: interview" />
+      <item index="10" class="java.lang.String" itemvalue="Rails.Production: interview" />
+      <item index="11" class="java.lang.String" itemvalue="Rails.Development: interview" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -730,21 +725,21 @@
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32637855" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2819149" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31914893" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28975534" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32637855" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -769,304 +764,289 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/rails">
+    <entry file="file://$PROJECT_DIR$/../blog/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562" />
+        <state line="10" column="17" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/bundle">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140225102641_add_topic_id_to_questions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/student_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/score_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/scores_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/students_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/javascript.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="64" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140203051935_add_option_c_to_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140210052818_create_scores.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140203051847_add_option_a_to_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="0.05586592" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140206111952_add_answer_to_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.1396648" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140203112154_create_students.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140203051926_add_option_b_to_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140218091945_delete_type_from_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="113" selection-end="113" vertical-scroll-proportion="0.051107325" vertical-offset="0" max-vertical-offset="587" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140201094138_create_questions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/scores/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="538" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/tata-safari-storme-swamp-photo-1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/test.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/scores/new.hmtl.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/score.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="73" selection-end="73" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/questions/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="542">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/scores/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/questions.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/students/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="1" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/topics_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/topics/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="145" selection-end="145" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/topic.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/app/views/posts/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/app/views/posts/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.58441556" vertical-offset="0" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/controllers/employee_statutories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2715" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/scores/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/employee_statutories/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="23" column="27" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-8.5" vertical-offset="141" max-vertical-offset="1830" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/score.css.scss">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/employee_esi_contribution_restricts/_esi_applicability.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scores.css.scss">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/_salary_summary_det.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3690476" vertical-offset="186" max-vertical-offset="690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/questions.css.scss">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/_salary_held_employees.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="5" selection-start="773" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/_salary.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5242" column="0" selection-start="128374" selection-end="128374" vertical-scroll-proportion="-0.625" vertical-offset="78615" max-vertical-offset="81705">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.294896" vertical-offset="2801" max-vertical-offset="3330" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/_bulk_payslip_search_employee.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="305" selection-end="305" vertical-scroll-proportion="-2.125" vertical-offset="129" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salaries/_bulk_payslip_employee.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0018050541" vertical-offset="1" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salary_heads/create.js.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salary_heads/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="62" selection-start="2668" selection-end="2695" vertical-scroll-proportion="0.566787" vertical-offset="721" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/employee_esi_contribution_restricts/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/views/salary_groups/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="456" selection-end="456" vertical-scroll-proportion="0.3033088" vertical-offset="0" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/scores_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="54" selection-start="594" selection-end="594" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/score.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="113" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/scores/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="584" selection-end="584" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="405">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="19" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/app/views/posts/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="11" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.88832486" vertical-offset="0" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/students/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/scores/test_saved.html.haml">
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/models/company.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="119" selection-end="119" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+        <state line="85" column="38" selection-start="4583" selection-end="4583" vertical-scroll-proportion="2.4619288" vertical-offset="0" max-vertical-offset="2925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140201094138_create_questions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="123" selection-end="123" vertical-scroll-proportion="0.12690355" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/models/employee.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="34" selection-start="9256" selection-end="9256" vertical-scroll-proportion="0.0" vertical-offset="3120" max-vertical-offset="11145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../saral-web-payroll/app/controllers/employees_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="39" selection-start="8398" selection-end="8398" vertical-scroll-proportion="0.0" vertical-offset="3052" max-vertical-offset="4305">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/students/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/students.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/student.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/scores_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="305" selection-end="305" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/score.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/student_answer.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="0" selection-end="156" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="6" selection-start="954" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/student_indivisual_answer.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="73" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="25" column="51" selection-start="548" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="71" selection-start="803" selection-end="803" vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="885">
+        <state line="35" column="55" selection-start="819" selection-end="853" vertical-scroll-proportion="-16.75" vertical-offset="123" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5194" column="12" selection-start="127398" selection-end="127398" vertical-scroll-proportion="0.5956679" vertical-offset="77580" max-vertical-offset="83535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/student_answer.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="59" selection-start="226" selection-end="226" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/student.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/student_individual_answer.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="113" selection-start="523" selection-end="523" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/question.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="11" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="389" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="32" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="809" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/student_result.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="46" selection-start="83" selection-end="83" vertical-scroll-proportion="0.058027077" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
       </provider>

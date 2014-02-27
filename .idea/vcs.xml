@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$/../blog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../saral-web-payroll" vcs="Git" />
   </component>
 </project>
 

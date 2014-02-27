@@ -9,4 +9,25 @@
   <data-source source="LOCAL" name="Rails interview: production" uuid="b9b5b05c-606d-4a1c-be61-45b1eeec3ec9">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails blog: development" uuid="db444ca3-9b2b-41bc-8f03-de1de59a925d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails blog: test" uuid="0724798c-295f-49f0-9e4f-42b70ed3b0bf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails blog: production" uuid="5b22c2b9-a5fc-408a-8a7d-c21fc0aa46e5">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails saral-web-payroll: development" uuid="cd85ab03-933c-428b-a2eb-22e96132aa2e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails saral-web-payroll: test" uuid="6f650910-c16b-4a7e-bf1e-e92578c5dbeb">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails saral-web-payroll: ci" uuid="50b1287d-8f41-422a-9839-af7166875e3f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails saral-web-payroll: cucumber" uuid="48e82235-08a7-42fe-b5ce-a79cf6020885">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

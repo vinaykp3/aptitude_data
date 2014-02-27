@@ -1,11 +1,12 @@
 #form-container
-  %table
-    .question-table-th
+
+  .question-table-th
+    %table
       %tr
-        %th
-          %strong Name
+        %th Name
         - @user1.each do |answer|
           %tr
             %td
               =answer.name
-              =link_to "show",student_indivisual_answer_questions_path
+              =hidden_field_tag "student_id","#{answer.id}"
+              =link_to "show",student_individual_answer_questions_path(:student_id =>"#{answer.id}")

@@ -12,24 +12,34 @@
 
 <body>
 <div class="header">
-  <div class="sub-header1">
-    <div class="sub-header2">
-      <nav >
-        <ul>
 
+  <div class="sub-header1">
+
+
+      <nav  class="sub-header2">
+
+        <ul>
           <li><%=link_to "Question Master"%>
             <ul>
               <li> <%=link_to "Home",students_path%></li>
               <li> <%=link_to "Add Question",new_question_path%></li>
               <li> <%=link_to "View Answer",student_answer_questions_path%></li>
             </ul>
-            </li>
-
-          <li><%=link_to "Student Registration",new_student_path%></li>
+          </li>
         </ul>
       </nav>
-    </div>
-  </div>
+
+
+
+      <nav  class="sub-header3">
+        <ul>
+          <!--<li><%=link_to "Sign up",new_student_path%></li>-->
+          <li><%=link_to "Sign in ",signin_path%></li>
+        </ul>
+      </nav>
+
+
+</div>
 </div>
 
 <div class="container">

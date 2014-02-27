@@ -5,9 +5,16 @@ Interview::Application.routes.draw do
   # You can have the root of your site routed with "root"
   #match '/show', to: 'scores#show', via: 'get'
 
+  get "/signin", to:"sessions#new"
+
+  post "/signin", to: "sessions#create"
+
   resources :questions do
    get "student_answer",:on=>:collection
-   get  "student_indivisual_answer",:on=>:collection
+   get "student_individual_answer",:on=>:collection
+   get "excel_generate",:on=>:collection
+   get "student_result",:on=>:collection
+   get "fetch_topic_for_questions",:on=>:collection
   end
 
   resources :scores ,:except => [:show,:destroy,:edit,:update] do
@@ -16,7 +23,9 @@ Interview::Application.routes.draw do
 
   resources :students
 
-  root "students#index"
+  resources :topics
+
+    root "topics#new"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

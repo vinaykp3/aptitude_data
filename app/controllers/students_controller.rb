@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
       if @student.save
-        flash[:notice] = "Student details successfully saved"
+        flash[:notice] = "You have signed up successfully"
           redirect_to @student
       else
         render 'new'
@@ -20,7 +20,12 @@ class StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
+    @topic_id = Student.fetch_topic
   end
+
+  #def fecth
+  #  @topic_id = Student.fetch_topic
+  #end
 
   def destroy
     @student=Student.find(params[:id])

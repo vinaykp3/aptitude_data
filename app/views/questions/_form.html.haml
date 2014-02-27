@@ -1,5 +1,5 @@
 #form-container
-  = form_for @user,url:{action: :create} do |f|
+  = form_for @user do |f|
 
     - if @user.errors.any?
       #error_explanation
@@ -10,13 +10,13 @@
       =@user.errors.full_messages do |msg|
         %li= msg
 
-    #form-button
+    #create_form.form-button
       %p
         =f.label "Add Question",class: :input_note1
       .clear_cls
         %p
           =f.label :sl_no,class: :input_note
-          = f.number_field :sl_no,class: :input_note2,:placeholder=>"Sl.no"
+          = f.text_field :sl_no,class: :input_note2
       .clear_cls
         %p
           =f.label :Question,class: :input_note
@@ -37,6 +37,10 @@
         %p
           =f.label :Answer,class: :input_note
           =f.text_field :answer,class: :tb5
+      .clear_cls
+        %p
+          =f.label :topic_id,"Category",class: :input_note
+          = f.select :topic_id, options_from_collection_for_select(Topic.all,"id","topic_name"),class: :tb5
       %p
-        = f.submit "Submit",class: :submit
+        = f.submit "Submit", class: :submit
   .cls

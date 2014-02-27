@@ -1,0 +1,21 @@
+#form-container
+  .question-table-th
+    %h3 Student Name : #{@student1.first.name}
+    %table#student_table
+      %tr{class: :question_tr_table}
+        %th Question
+        %th Answer
+        %th Option
+      - @student1.each do |individual_answer|
+        %tr.student
+          %td
+            =individual_answer.question
+          %td
+            =individual_answer.answer
+          %td
+            =individual_answer.option
+
+=link_to "Download the Excel sheet",excel_generate_questions_path(format: "xlsx",student_id: params[:student_id])
+%p
+=link_to "Logout",students_path
+

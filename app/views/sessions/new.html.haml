@@ -1,0 +1,18 @@
+#form-container
+  =form_for :signin,method: "POST" do |f|
+    #form-button
+      %p
+        =f.label "Please Sign in ",class: :input_note1
+      .clear_cls
+
+      =f.label :name,class: :input_note
+      .clear_cls
+      =f.text_field :name,class: :tb5
+      .clear_cls
+      =f.label :password,class: :input_note
+
+      =f.password_field :password,class: :tb5
+    %p
+      =f.submit "Sign in",class: :submit_seesions
+      =link_to "Sign up",new_student_path,class: :signup
+    .cls

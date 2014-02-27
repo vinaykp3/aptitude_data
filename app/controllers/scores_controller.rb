@@ -1,8 +1,9 @@
 class ScoresController < ApplicationController
 
   def index
-    @score1 = Score.question_data
+    @score1 = Score.question_data params[:topic_id]
     @student_id = params[:student_id]
+    @topic_id = params[:topic_id]
   end
 
   def new
@@ -12,12 +13,12 @@ class ScoresController < ApplicationController
   def create
     @answer= Score.insert_answer params[:data]
     flash[:notice] = "You have successfully completed the test"
-      redirect_to  action: :test_saved
+    redirect_to test_saved_scores_path params[:student_id]
   end
 
 
   def test_saved
-    @student = Score.student_data
+    @student = Score.student_data params
   end
 
   private

@@ -27,6 +27,10 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
+    axlsx (2.0.0)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (= 0.9.9)
     bcrypt-ruby (3.1.2)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
@@ -77,6 +81,7 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
+    htmlentities (4.3.1)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -204,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  axlsx
   bcrypt-ruby
   bootstrap-sass (= 2.3.2.0)
   capybara (= 2.1.0)

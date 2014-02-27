@@ -17,7 +17,6 @@ gem "haml", "~> 4.0.5"
 
 gem 'pry'
 
-gem 'pry-rails'
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'pg', '0.15.1'
@@ -25,6 +24,8 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+
+
 end
 
 group :test do
@@ -36,6 +37,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+gem 'axlsx'
 gem 'pry-debugger'
 gem 'pry-rails'
 gem "bcrypt-ruby"

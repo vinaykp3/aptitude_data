@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1330818207">
+  <component name="DataSourceManagerImpl" format="xml" hash="3778039496">
     <data-source source="LOCAL" name="Rails interview: development" uuid="e59afdd2-6159-4a04-a8dc-a7e298166fa3">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
@@ -23,6 +23,56 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1/interview_production</jdbc-url>
       <user-name>jeevaraj</user-name>
       <user-password>dfd9dfdcdfcddfc7dfcbdfc6dfcfdfc4dfcbdfc2dfcbdfc6dfc6dfc3df9b</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails blog: development" uuid="db444ca3-9b2b-41bc-8f03-de1de59a925d">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails blog: test" uuid="0724798c-295f-49f0-9e4f-42b70ed3b0bf">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails blog: production" uuid="5b22c2b9-a5fc-408a-8a7d-c21fc0aa46e5">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:production</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails saral-web-payroll: development" uuid="cd85ab03-933c-428b-a2eb-22e96132aa2e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/cloud_spp_dev</jdbc-url>
+      <user-name>spp_user</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails saral-web-payroll: test" uuid="6f650910-c16b-4a7e-bf1e-e92578c5dbeb">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/cloud_spp_test</jdbc-url>
+      <user-name>spp_user</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails saral-web-payroll: ci" uuid="50b1287d-8f41-422a-9839-af7166875e3f">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/cloud_spp_ci</jdbc-url>
+      <user-name>spp_user</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails saral-web-payroll: cucumber" uuid="48e82235-08a7-42fe-b5ce-a79cf6020885">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/cloud_spp_test</jdbc-url>
+      <user-name>spp_user</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
       <libraries />
     </data-source>
   </component>

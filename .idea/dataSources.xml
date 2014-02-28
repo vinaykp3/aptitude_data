@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3778039496">
+  <component name="DataSourceManagerImpl" format="xml" hash="1321134525">
     <data-source source="LOCAL" name="Rails interview: development" uuid="e59afdd2-6159-4a04-a8dc-a7e298166fa3">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
@@ -73,6 +73,18 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/cloud_spp_test</jdbc-url>
       <user-name>spp_user</user-name>
       <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails bootstrap: development" uuid="19391c9f-dfc5-43e3-ae16-187e13ff9abc">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../bootstrap/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails store: development" uuid="bb166077-62c0-4a53-9caa-32ebdc74e2e3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../store/db/development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>

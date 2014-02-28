@@ -48,5 +48,12 @@ class Question < ActiveRecord::Base
     Question.select("questions.question,questions.answer,scores.option,students.name, students.name").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN students ON scores.student_id=students.id").where("scores.student_id=?",params)
   end
 
+  def self.count
+    Question.select("")
+  end
+
+  def  self.number_of_questions topic_id
+    Question.where("topic_id= ?", topic_id).count()
+  end
 
 end

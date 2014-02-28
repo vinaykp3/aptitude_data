@@ -212,6 +212,9 @@
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.4.0, RVM: ruby-2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.0.7, RVM: ruby-2.0.0-p353) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, RVM: ruby-2.0.0-p353) [gem]" level="application" />
+    <orderEntry type="module" module-name="store" />
+    <orderEntry type="module" module-name="bootstrap" />
+    <orderEntry type="module" module-name="projects" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

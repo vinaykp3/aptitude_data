@@ -1,10 +1,38 @@
+
 #form-container
   %table
-    -@student.each do |student|
-      %tr
+  %p
+    %tr
+      %td
         %strong Name:
-        #{student.name}
-      %p
-        %strong Email:
-        #{student.email}
-
+        #{@student.first.name}
+  %p
+    %tr
+      %td
+        %strong Total No. Of Questions:
+        #{@number_of_questions}
+  %p
+    %tr
+      %td
+        %strong Total No. Of Attempted Questions:
+        #{@number_of_attempted_questions}
+  %p
+    %tr
+      %td
+        %strong Total No. of UnAttempted Questions:
+        #{@number_of_questions - @number_of_attempted_questions}
+  %p
+    %tr
+      %td
+        %strong Total No. of Correct Answers:
+        #{@number_of_correct_answers}
+  %p
+    %tr
+      %td
+        %strong Total No. of Wrong Answers:
+        #{@number_of_attempted_questions-@number_of_correct_answers}
+  -#%p
+  -#  %tr
+  -#    %td
+  -#      %strong Percentage Of your of Test :
+  -#      #{(@number_of_correct_answers/@number_of_questions)*100.to_i}%

@@ -30,4 +30,10 @@
   <data-source source="LOCAL" name="Rails saral-web-payroll: cucumber" uuid="48e82235-08a7-42fe-b5ce-a79cf6020885">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails bootstrap: development" uuid="19391c9f-dfc5-43e3-ae16-187e13ff9abc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails store: development" uuid="bb166077-62c0-4a53-9caa-32ebdc74e2e3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

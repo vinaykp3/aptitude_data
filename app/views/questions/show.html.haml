@@ -2,17 +2,17 @@
   %br
   %p
     %storng Sl.no:
-    =@user.sl_no
+    =@question.sl_no
   %p
     %strong Question:
-    =@user.question
+    =@question.question
   %p
     %strong Options:
-    %li=@user.option_a
-    %li=@user.option_b
-    %li=@user.option_c
+    %li=@question.option_a
+    %li=@question.option_b
+    %li=@question.option_c
   %p
     %strong Answer
-    =@user.answer
+    =@question.answer
 %br
   = link_to 'BACK',questions_path

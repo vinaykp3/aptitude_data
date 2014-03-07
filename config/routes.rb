@@ -25,7 +25,7 @@ Interview::Application.routes.draw do
 
   resources :topics
 
-    root "topics#new"
+    root "students#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

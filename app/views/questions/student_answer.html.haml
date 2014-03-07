@@ -1,12 +1,14 @@
-#form-container
-
-  .question-table-th
-    %table
+%table.table.table-striped.table-hover
+  %tr
+    %th Name
+    %th Email
+    - @student_user.each do |answer|
       %tr
-        %th Name
-        - @user1.each do |answer|
-          %tr
-            %td
-              =answer.name
-              =hidden_field_tag "student_id","#{answer.id}"
-              =link_to "show",student_individual_answer_questions_path(:student_id =>"#{answer.id}")
+        %td
+          =answer.name
+        %td
+          =answer.email
+          =hidden_field_tag "student_id","#{answer.id}"
+          =link_to "Details",student_individual_answer_questions_path(:student_id =>"#{answer.id}")
+          =link_to "Destroy",student_path(answer),
+              method: :delete,data:{confirm:'Are you sure ?'}

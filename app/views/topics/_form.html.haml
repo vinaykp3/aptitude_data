@@ -1,4 +1,8 @@
-= form_for @topic,url:{action: :create} do |f|
-  =f.label :topic_name
-  =f.text_field :topic_name,:placeholder=>"Name"
-  =f.submit "Save Topic",class: :submit_student
+.topic-form
+  = form_for @topic,url:{action: :create} do |f|
+    %p.text-center
+      =f.label :topic_name,"Topic Name "
+    %p
+      =f.text_field :topic_name,:placeholder=>"Name",class:"form-control"
+    %p
+      =f.submit "Save Topic", class:"btn btn-info"

@@ -1,18 +1,15 @@
-#form-container
+.form-horizontal{:role => "form"}
   =form_for :signin,method: "POST" do |f|
-    #form-button
-      %p
-        =f.label "Please Sign in ",class: :input_note1
-      .clear_cls
-
+    .text-center.signin_header
+      =f.label "Please Sign in ",class: :input_note1
+    %p
       =f.label :name,class: :input_note
-      .clear_cls
-      =f.text_field :name,class: :tb5
-      .clear_cls
+
+      =f.text_field :name,class:"form-control",placeholder:"Name",:autofocus=>true
+    %p
       =f.label :password,class: :input_note
 
-      =f.password_field :password,class: :tb5
+      =f.password_field :password,class:"form-control",placeholder:"Password",:autofocus=>true
     %p
-      =f.submit "Sign in",class: :submit_seesions
-      =link_to "Sign up",new_student_path,class: :signup
-    .cls
+      =f.submit "Sign in",class:"btn btn-info"
+      =link_to "Sign up",new_student_path,class:"btn btn-info"

@@ -11,7 +11,6 @@ class ScoresController < ApplicationController
   end
 
   def create
-
     @answer= Score.insert_answer params[:data]
     flash[:notice] = "You have successfully completed the test"
     redirect_to test_saved_scores_path :student_id => params[:student_id], :topic_id => params[:topic_id]

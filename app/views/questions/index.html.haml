@@ -1,24 +1,22 @@
 %p
-Listing all Question:
-#question-index
-  .question-table-th
-    %table
-      %tr{class: :question_tr_table}
-        %th Sl_no
-        %th Question
-        %th Options
-        %th{:colspan => 7} Answers
-      - @user.each do |option|
-        %tr
-          %td= option.sl_no
-          %td= option.question
-          %td= option.option_a
-          %td= option.option_b
-          %td= option.option_c
-          %td= option.answer
+  Listing all Question
+%table.table.table-striped.table-hover
+  %tr
+    %th Sl_no
+    %th Question
+    %th Options
+    %th{:colspan => 7}Answers
+  - @question.each do |option|
+    %tr
+      %td= option.sl_no
+      %td= option.question
+      %td= option.option_a
+      %td= option.option_b
+      %td= option.option_c
+      %td= option.answer
 
-          %td= link_to 'Show', question_path(option)
-          %td= link_to 'Edit', edit_question_path(option)
-          %td= link_to "New", new_question_path(option)
-          %td= link_to 'Destroy', question_path(option),
-                method: :delete, data: { confirm: 'Are you sure?'}
+      %td= link_to 'Show', question_path(option)
+      %td= link_to 'Edit', edit_question_path(option)
+      %td= link_to "New", new_question_path(option)
+      %td= link_to 'Destroy', question_path(option),
+            method: :delete, data: { confirm: 'Are you sure?'}

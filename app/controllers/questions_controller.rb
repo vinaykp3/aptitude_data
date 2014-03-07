@@ -5,16 +5,16 @@ class QuestionsController < ApplicationController
   layout 'application'
 
   def new
-    @user = Question.new
+    @question = Question.new
   end
 
   def index
-    @user = Question.order('created_at ASC')
+    @question = Question.order('created_at ASC')
   end
 
   def create
-    @user= Question.new(user_params)
-    if @user.save!
+    @question= Question.new(user_params)
+    if @question.save!
       flash[:alert] = "Question has been successfully saved"
       redirect_to action: :index
     else
@@ -23,36 +23,40 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @user = Question.find(params[:id])
+    @question = Question.find(params[:id])
   end
 
   def edit
-     @user = Question.find(params[:id])
+     @question = Question.find(params[:id])
   end
 
   def update
-    @user = Question.find(params[:id])
-    if @user.update(user_params)
-      redirect_to @user
+    @question = Question.find(params[:id])
+    if @question.update(user_params)
+      redirect_to @question
     else
       render 'edit'
     end
   end
 
   def destroy
-    @user = Question.find(params[:id])
-    @user.destroy
+    @question = Question.find(params[:id])
+    @question.destroy
     redirect_to action: :index
   end
 
 
   def student_answer
-    @user1 = Question.fetch_answer
+    @student_user = Question.fetch_answer
   end
 
   def student_individual_answer
     @student = Question.fetch_student_details params
+
   end
+
+
+
 
   def excel_generate
     file = Question.student_excel params

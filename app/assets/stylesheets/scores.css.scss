@@ -2,14 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#menu_bar {
-  width: 100%;
-  background: -moz-linear-gradient(center top , rgb(2, 114, 167), rgb(1, 57, 83)) repeat scroll 0% 0% transparent;
-  margin: 0px;
-  padding: 0px;
-  clear: both;
-  display: block;
-  float: left;
-  top: 0px;
-  height: 28px;
+//#menu_bar {
+//  width: 100%;
+//  background: -moz-linear-gradient(center top , rgb(2, 114, 167), rgb(1, 57, 83)) repeat scroll 0% 0% transparent;
+//  margin: 0px;
+//  padding: 0px;
+//  clear: both;
+//  display: block;
+//  float: left;
+//  top: 0px;
+//  height: 28px;
+//}
+
+.list-group{
+padding-left: 0;
+margin-bottom: 20px;
+margin-left: 300px;
+width:350px
 }

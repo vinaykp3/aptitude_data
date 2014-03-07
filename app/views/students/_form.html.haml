@@ -1,6 +1,5 @@
-#form-container
+.form-horizontal{:role => "form"}
   = form_for @student  do |f|
-
     -if @student.errors.any?
       #error_explanation
         =pluralize(@student.errors.count,'error')
@@ -9,29 +8,29 @@
         =@student.errors.full_messages do |msg|
           %li= msg
     #form-button
-      %p
+      %p.text-center.signin_header
         =f.label "Enter details for student Sign up",class: :input_note1
         .clear_cls
         %p
       .clear_cls
         %p
-          =f.text_field :name,:placeholder=>"Name"
+          =f.text_field :name,:placeholder=>"Name",class:"form-control"
       .clear_cls
         %p
-          =f.text_field :qualification,:placeholder =>"Qualification"
+          =f.text_field :qualification,:placeholder =>"Qualification",class:"form-control"
       .clear_cls
         %p
-          =f.text_field :age,:placeholder => "Age",class: :textbox
+          =f.text_field :age,:placeholder => "Age",class: :textbox,class:"form-control"
       .clear_cls
         %p
-          =f.email_field :email,:placeholder => "Email"
+          =f.email_field :email,:placeholder => "Email",class:"form-control"
       .clear_cls
         %p
-          =f.password_field :password,:placeholder =>"password"
+          =f.password_field :password,:placeholder =>"password",class:"form-control"
       .clear_cls
         %p
-          =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation"
+          =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation",class:"form-control"
 
       %p
-        =f.submit "Submit", class: :submit
+        =f.submit "Submit",class:"btn btn-info"
     .cls

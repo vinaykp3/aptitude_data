@@ -1,4 +1,4 @@
-#form-container
+.form-horizontal{:role => "form"}
   %h3
     The Student details are like this:
   %p
@@ -14,16 +14,15 @@
     %strong Email:
     =@student.email
     %br
-
     %h4
       Select any one of the options to take test:
 
   =form_tag  ({controller: "scores",action:"index"}) ,method: "get"  do
     =hidden_field_tag "student_id" , @student.id
     %p
-      =select_tag "topic_id", options_from_collection_for_select(Topic.all,"id","topic_name")
+      =select_tag "topic_id", options_from_collection_for_select(Topic.all,"id","topic_name"),class:"btn btn-info"
     %p
-    =submit_tag "Write test",class: :submit_student
+      =submit_tag "Write test",class:"btn btn-info"
 
     -#  = link_to "Write Test",scores_path(:student_id=>@student.id,:topic_id=>@topic_id.second.id)
     -#  -#,:confirm => "Are you sure want to continue?"

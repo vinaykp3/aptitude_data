@@ -3,7 +3,6 @@ class Score < ActiveRecord::Base
   belongs_to :question
 
   def self.number_of_correct_answers student_id
-
     Score.joins("INNER JOIN questions ON questions.answer=scores.option").where(" student_id=?",student_id).count
   end
 
@@ -12,7 +11,7 @@ class Score < ActiveRecord::Base
   end
 
   def self.question_data topic_id
-    Question.select('questions.id,questions.sl_no,questions.question,questions.option_a,questions.option_b,questions.option_c').where("topic_id=?", topic_id)
+    Question.select('id,sl_no,question,option_a,option_b,option_c').where("topic_id=?", topic_id)
   end
 
   def self.student_data student_id

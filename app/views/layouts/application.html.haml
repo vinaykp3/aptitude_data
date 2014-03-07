@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title Interview
+    = stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %header
+      .dropdown-header
+        %ul.nav.nav-pills
+          %li
+            = link_to "Home",students_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Question Master
+              %span.caret
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                = link_to "Add Topic",new_topic_path
+              %li
+                = link_to "Add Question",new_question_path
+              %li
+                = link_to "View Answer",student_answer_questions_path
+              %li.divider
+        %ul.nav.nav-tabs
+          %li= link_to "Sign in ",signin_path
+        .cls
+    .container
+      .alert-success
+      - flash.each do |key,value|
+        .flash{:id => key}
+          = value
+      = yield
+    .footer
+      .panel-footer
+        A Simple Application for Beginners on RUBY ON RAILS
+

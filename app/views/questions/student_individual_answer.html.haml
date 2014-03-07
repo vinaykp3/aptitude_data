@@ -1,19 +1,22 @@
-#form-container
-  .question-table-th
-    %table
-      %tr{class: :question_tr_table}
-        %th Question
-        %th Answer
-        %th Option
-      - @student.each do |individual_answer|
-        %tr
-          %td
-            =individual_answer.question
-          %td
-            =individual_answer.answer
-          %td
-            =individual_answer.option
+%p
+%table.table.table-striped.table-hover
+  %tr
+    %th Category
+    %th Question
+    %th Answer
+    %th Option
 
+  - @student.each do |individual_answer|
+    %tr
+      %td
+        =individual_answer.topic_name
+      %td
+        =individual_answer.question
+      %td
+        =individual_answer.answer
+      %td
+        =individual_answer.option
+%p
 =link_to "Back",student_answer_questions_path
 %br
 =link_to "Download the Excel sheet",excel_generate_questions_path(format: "xlsx",student_id: params[:student_id])

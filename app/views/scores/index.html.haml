@@ -1,15 +1,13 @@
-#form-container
-  %p
+.form-horizontal{:role => "form"}
   =form_tag @score do
-
     %h3 Questions:
     %table
       %ul
       -@score1.each do |option|
         %tr
-          %td.question{:colspan=>1}#{option.sl_no}.#{option.question}
+          %td{:colspan=>1}#{option.sl_no}.#{option.question}
         %tr
-          %td.radio_button_color
+          %td
             =radio_button_tag "data[#{@student_id}][#{option.id}]", "#{option.option_a}"
             =option.option_a
           %td
@@ -23,4 +21,4 @@
             =hidden_field_tag "topic_id", @topic_id
       %tr
         %td
-          =submit_tag "Submit Answer",class: :submit
+          =submit_tag "Submit Answer",class:"btn btn-info"

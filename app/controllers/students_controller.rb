@@ -30,7 +30,7 @@ class StudentsController < ApplicationController
   def destroy
     @student=Student.find(params[:id])
       @student.destroy
-        redirect_to action: :index
+        redirect_to student_answer_questions_path
   end
   def fetch_student
 

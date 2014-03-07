@@ -10,11 +10,11 @@ class Question < ActiveRecord::Base
 
 
   def self.fetch_answer
-    Student.select("students.name,students.id")
+    Student.select("students.name,students.id,students.email")
   end
 
   def self.fetch_student_details params
-    Question.select("questions.question,questions.answer,scores.option").joins("INNER JOIN scores ON questions.id=scores.question_id").where("scores.student_id=?",params[:student_id])
+    Question.select("questions.question,questions.answer,scores.option,topics.topic_name").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.student_id=? ",params[:student_id])
   end
 
   def self.student_excel params

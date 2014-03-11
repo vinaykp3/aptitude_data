@@ -14,8 +14,8 @@ class QuestionsController < ApplicationController
 
   def create
     @question= Question.new(user_params)
-    if @question.save!
-      flash[:alert] = "Question has been successfully saved"
+    if @question.save
+      flash[:success] = "Question has been successfully saved"
       redirect_to action: :index
     else
       render nothing: true
@@ -55,9 +55,6 @@ class QuestionsController < ApplicationController
 
   end
 
-
-
-
   def excel_generate
     file = Question.student_excel params
     respond_to do |format|
@@ -76,7 +73,16 @@ class QuestionsController < ApplicationController
   end
 
   def javascript
+  end
 
+
+  private
+  def authorize_admin
+    require_signin!
+      unless current_user.admin?
+        flash[:danger]= "You must be an ADMIN to do that"
+        redirect_to root_path
+      end
   end
 
   private

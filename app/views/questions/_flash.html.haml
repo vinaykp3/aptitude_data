@@ -1,0 +1,5 @@
+- [:notice, :error, :alert].each do |level|
+  - unless flash[level].blank?
+    %div{:class => "alert-danger #{flash_class(level)}"}
+      %a.close{:href => "#"} ×
+      = content_tag :p, flash[level]

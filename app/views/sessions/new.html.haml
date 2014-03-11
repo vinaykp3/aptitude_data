@@ -1,5 +1,18 @@
+:javascript
+  function alert(){
+   var error = document.getElementById('error');
+   document.getElementById('error').style.color = 'red';
+   var success = document.getElementById('notice');
+   if error {
+   alert('hi')
+   document.getElementById('error').style.color = 'red';
+   else if success{
+   document.getElementById('error').style.color = 'green';
+   }
+   }
+  }
 .form-horizontal{:role => "form"}
-  =form_for :signin,method: "POST" do |f|
+  =form_for :signin,method: "POST", onsubmit: "alert" do |f|
     .text-center.signin_header
       =f.label "Please Sign in ",class: :input_note1
     %p

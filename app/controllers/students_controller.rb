@@ -1,5 +1,7 @@
 class StudentsController < ApplicationController
 
+  before_action :require_signin!, except: [:show, :index]
+
   def index
     @student = Student.all
   end
@@ -11,7 +13,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
       if @student.save
-        flash[:notice] = "You have signed up successfully"
+        flash[:success] = "You have signed up successfully"
           redirect_to @student
       else
         render 'new'

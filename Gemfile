@@ -7,6 +7,9 @@ gem 'coffee-rails', '4.0.1'
 gem 'axlsx'
 gem 'axlsx_rails'
 gem 'acts_as_xlsx'
+gem 'devise'
+gem 'heroku'
+gem "cancan", "~> 1.6.10"
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

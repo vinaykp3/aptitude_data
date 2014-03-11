@@ -10,7 +10,7 @@
     #form-button
       %p.text-center.signin_header
         =f.label "Enter details for student Sign up",class: :input_note1
-        .clear_cls
+      .clear_cls
         %p
       .clear_cls
         %p
@@ -30,7 +30,5 @@
       .clear_cls
         %p
           =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation",class:"form-control"
-
-      %p
-        =f.submit "Submit",class:"btn btn-info"
+          =f.submit "Submit",class:"btn btn-info"
     .cls

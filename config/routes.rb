@@ -22,7 +22,6 @@ Interview::Application.routes.draw do
   end
 
   resources :students
-
   resources :topics
 
     root "students#index"

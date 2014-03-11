@@ -27,12 +27,9 @@
           %li= link_to "Sign in ",signin_path
         .cls
     .container
-      .alert-success
-      - flash.each do |key,value|
-        .flash{:id => key}
-          = value
+      - flash.each do |key, value|
+        %div{:class=>"alert alert-#{key}"}= value
       = yield
     .footer
       .panel-footer
         A Simple Application for Beginners on RUBY ON RAILS
-

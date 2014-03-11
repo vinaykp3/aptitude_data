@@ -87,6 +87,12 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../store/db/development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails time1: development" uuid="1d843aa6-ceca-428b-bda1-feec9962b811">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../time1/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

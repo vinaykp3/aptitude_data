@@ -10,10 +10,10 @@ gem 'acts_as_xlsx'
 gem 'devise'
 gem 'heroku'
 gem "cancan", "~> 1.6.10"
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
-  gem 'pg', '0.15.1'
   gem 'guard-rspec', '3.1.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
@@ -41,5 +41,5 @@ end
 
 group :production do
   #gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+
 end

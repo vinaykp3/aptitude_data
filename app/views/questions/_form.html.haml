@@ -1,34 +1,28 @@
-- if @question.errors.any?
-  #error_explanation
-    %h3
-    =pluralize(@question.errors.count,"error")
-    Prohibited to save this question!
-  %ul
-  =@question.errors.full_messages do |msg|
-    %li= msg
+= form_for @question, :method=>:POST do |f|
+  - if @question.errors.any?
+    #error_explanation
+      %h3
+      =pluralize(@question.errors.count,"error")
+      Prohibited to save this question!
+    %ul
+    =@question.errors.full_messages do |msg|
+      %li= msg
 
-.form-button.form-horizontal
-  %p.text-center.signin_header
-    =f.label "Add Question",class: :input_note1
-  .clear_cls
-    %p
-      =f.label :sl_no,class: :input_note
-      = f.text_field :sl_no,class:"form-control",placeholder:"optioin A",:autofocus=>true
-  .clear_cls
+  .form-button
     %p
       =f.label :Question,class: :input_note
-      =f.text_field :question,class:"form-control"
+      =f.text_area :question,class:"form-control"
   .clear_cls
     %p
-      =f.label :Options_a
+      =f.label :Option_a
       =f.text_field :option_a,class:"form-control"
   .clear_cls
     %p
-      =f.label :Options_b,class: :input_note
+      =f.label :Option_b,class: :input_note
       =f.text_field :option_b,class:"form-control"
   .clear_cls
     %p
-      =f.label :Options_c,class: :input_note
+      =f.label :Option_c,class: :input_note
       =f.text_field :option_c,class:"form-control"
   .clear_cls
     %p
@@ -39,5 +33,5 @@
       =f.label :topic_id,"Category",class: :input_note
       = f.select :topic_id, options_from_collection_for_select(Topic.all,"id","topic_name"),class:"btn btn-info"
   %p
-    = f.submit "Submit",class:"btn btn-info"
+    = f.submit "Save",class:"btn btn-info"
 .cls

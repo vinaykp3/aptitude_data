@@ -1,34 +1,35 @@
-%table.list-group
-  %p
-    %tr
-      %td.list-group-item
-        %strong Name:
-        #{@student.first.name}
-  %p
-    %tr
-      %td.list-group-item
-        %strong Total No. Of Questions:
-        #{@number_of_questions}
-  %p
-    %tr
-      %td.list-group-item
-        %strong Total No. Of Attempted Questions:
-        #{@number_of_attempted_questions}
-  %p
-    %tr
-      %td.list-group-item
-        %strong Total No. of UnAttempted Questions:
-        #{@number_of_questions - @number_of_attempted_questions}
-  %p
-    %tr
-      %td.list-group-item
-        %strong Total No. of Correct Answers:
-        #{@number_of_correct_answers}
-  %p
-    %tr
-      %td.list-group-item
-        %strong Total No. of Wrong Answers:
-        #{@number_of_attempted_questions-@number_of_correct_answers}
+-#%table.list-group
+-#  %p
+-#    %tr
+-#      %td.list-group-item
+-#        %strong Name:
+-#        -binding.pry
+-#        #{current_user}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. Of Questions:
+  -#      #{@number_of_questions}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. Of Attempted Questions:
+  -#      #{@number_of_attempted_questions}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. of UnAttempted Questions:
+  -#      #{@number_of_questions - @number_of_attempted_questions}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. of Correct Answers:
+  -#      #{@number_of_correct_answers}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. of Wrong Answers:
+  -#      #{@number_of_attempted_questions-@number_of_correct_answers}
   -#%p
   -#  %tr
   -#    %td

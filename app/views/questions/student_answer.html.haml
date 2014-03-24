@@ -2,13 +2,12 @@
   %tr
     %th Name
     %th Email
-    - @student_user.each do |answer|
+    - @student_answer.each do |student_answer|
       %tr
         %td
-          =answer.name
+          =student_answer.username
         %td
-          =answer.email
-          =hidden_field_tag "student_id","#{answer.id}"
-          =link_to "Details",student_individual_answer_questions_path(:student_id =>"#{answer.id}")
-          =link_to "Destroy",student_path(answer),
-              method: :delete,data:{confirm:'Are you sure ?'}
+          =student_answer.email
+          =link_to "Answer Details",student_individual_answer_questions_path(:student_id =>"#{student_answer.id}")
+          =link_to "Destroy",student_path(student_answer),
+                method: :delete,data:{confirm:'Are you sure ?'}

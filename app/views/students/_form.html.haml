@@ -9,7 +9,7 @@
           %li= msg
     #form-button
       %p.text-center.signin_header
-        =f.label "Enter details for student Sign up",class: :input_note1
+        =f.label "Enter details for student to take Test",class: :input_note1
       .clear_cls
         %p
       .clear_cls
@@ -25,10 +25,5 @@
         %p
           =f.email_field :email,:placeholder => "Email",class:"form-control"
       .clear_cls
-        %p
-          =f.password_field :password,:placeholder =>"password",class:"form-control"
-      .clear_cls
-        %p
-          =f.password_field :password_confirmation,:placeholder =>"Password_Confirmation",class:"form-control"
-          =f.submit "Submit",class:"btn btn-info"
+        =f.submit "Submit",class:"btn btn-info"
     .cls

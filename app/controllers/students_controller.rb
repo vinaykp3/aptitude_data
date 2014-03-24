@@ -1,9 +1,11 @@
 class StudentsController < ApplicationController
 
-  before_action :require_signin!, except: [:show, :index]
+  load_and_authorize_resource
 
   def index
     @student = Student.all
+    @user_id = User.all
+
   end
 
   def new

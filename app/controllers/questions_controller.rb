@@ -1,19 +1,18 @@
 class QuestionsController < ApplicationController
 
-  http_basic_authenticate_with name:"relyon",password:"123"
-
-  layout 'application'
+  load_and_authorize_resource
 
   def new
     @question = Question.new
   end
 
   def index
-    @question = Question.order('created_at ASC')
+
+     @question = Question.all
   end
 
   def create
-    @question= Question.new(user_params)
+    @question= Question.new(question_params)
     if @question.save
       flash[:success] = "Question has been successfully saved"
       redirect_to action: :index
@@ -32,7 +31,7 @@ class QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
-    if @question.update(user_params)
+    if @question.update(question_params)
       redirect_to @question
     else
       render 'edit'
@@ -47,11 +46,11 @@ class QuestionsController < ApplicationController
 
 
   def student_answer
-    @student_user = Question.fetch_answer
+    @student_answer = Question.fetch_answer
   end
 
   def student_individual_answer
-    @student = Question.fetch_student_details params
+    @student_individual_answer = Question.fetch_student_details params
 
   end
 
@@ -72,21 +71,14 @@ class QuestionsController < ApplicationController
     @student1 = Question.student_view params[:student_id]
   end
 
-  def javascript
-  end
+ def select_topic
+   @user_id = current_user.id
+   @topic_id = Question.fetch_topic
+ end
 
 
   private
-  def authorize_admin
-    require_signin!
-      unless current_user.admin?
-        flash[:danger]= "You must be an ADMIN to do that"
-        redirect_to root_path
-      end
-  end
-
-  private
-  def user_params
+  def question_params
     params.require(:question).permit(:sl_no,:question,:option_a,:option_b,:option_c,:answer,:topic_id)
   end
 

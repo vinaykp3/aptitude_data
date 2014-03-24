@@ -1,20 +1,18 @@
 class Question < ActiveRecord::Base
 
-  has_many :students
-  has_many :score
+  has_many :scores
 
-
-  validates :sl_no,:question,:option_a,:option_b,:option_c,presence: :true
-  validates :sl_no, numericality: {only_integer: :true,
-                                   message: 'only number must be entered'}
+  validates :question,:option_a,:option_b,:option_c,presence: :true
+  #validates :sl_no, numericality: {only_integer: :true,
+  #                                 message: 'only number must be entered'}
 
 
   def self.fetch_answer
-    Student.select("students.name,students.id,students.email")
+    User.select("id,username,email")
   end
 
   def self.fetch_student_details params
-    Question.select("questions.question,questions.answer,scores.option,topics.topic_name").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.student_id=? ",params[:student_id])
+    Question.select("questions.question,questions.answer,scores.option,topics.topic_name,topics.description").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.student_id=? ",params[:student_id])
   end
 
   def self.student_excel params
@@ -54,6 +52,10 @@ class Question < ActiveRecord::Base
 
   def  self.number_of_questions topic_id
     Question.where("topic_id= ?", topic_id).count()
+  end
+
+  def self.fetch_topic
+    Topic.all
   end
 
 end

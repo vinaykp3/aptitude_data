@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'aa8c6688b8d486a590361471467b31130757f0252d2178b895d1364835fb19a09744aba047999afedf8707ab01d0fd5d14a90d6c4215d1a8bce404fad5fe4b25'
+  config.secret_key = 'fd5210e42a0c4b4f30632ddc95a8d84731e018c8b507860df515c9a7b1b24044044c720834df7fc25e9724431dc029843b43b97196c04b2438287dcbb134a3a5'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -29,7 +29,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [ :email ]
+  config.authentication_keys = [ :email ]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -95,7 +95,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '5bb778f83818b469bd9d386f813745a8b76783f992285cdd6e967c642b8b1a4ca4bb0fc8ee411441d0fb3729c52c4f62d383479ba57d033f17cde05570e64320'
+  # config.pepper = 'e9b68d4cd8d7f8d7f161ea609b8e325130fa493bea52f8e97f0b20a7bb78bf6e438020a44f867c235de273bf3ca8bddd600fd0c07e9594984df47d6057d75d4c'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -135,7 +135,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 8..128
+  config.password_length = 2..10
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -145,7 +145,7 @@ Devise.setup do |config|
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
-  # config.timeout_in = 30.minutes
+   config.timeout_in = 1.minutes
 
   # If true, expires auth token on session timeout.
   # config.expire_auth_token_on_timeout = false

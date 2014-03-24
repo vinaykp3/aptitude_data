@@ -1,2 +1,15 @@
-=@topics.each do |topic|
-  =topic.topic_name
+%table.table.table-striped.table-hover
+  %tr
+    %th Id
+    %th Topic Name
+    %th Created_at
+    %th{:colspan => 7}Options
+  -@topics.each do |topic|
+    %tr
+      %td=topic.id
+      %td=topic.topic_name
+      %td=topic.created_at
+      %td= link_to 'View Questions',fetch_topic_topics_path(:topic_id=>topic.id)
+      %td= link_to 'Edit', edit_topic_path(topic)
+      %td= link_to 'Destroy', topic_path(topic),
+                  method: :delete, data: { confirm: 'Are you sure?'}

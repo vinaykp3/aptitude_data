@@ -1,6 +1,7 @@
 class Score < ActiveRecord::Base
 
   belongs_to :question
+  belongs_to :user
 
   def self.number_of_correct_answers student_id
     Score.joins("INNER JOIN questions ON questions.answer=scores.option").where(" student_id=?",student_id).count
@@ -11,20 +12,24 @@ class Score < ActiveRecord::Base
   end
 
   def self.question_data topic_id
-    Question.select('id,sl_no,question,option_a,option_b,option_c').where("topic_id=?", topic_id)
+    Question.select('sl_no,question,option_a,option_b,option_c,topics.topic_name,topics.id').joins("Inner join topics ON questions.topic_id=topics.id").where("topic_id = ?", topic_id)
   end
 
-  def self.student_data student_id
-     Student.select('students.id,students.name,students.email').where("id=?",student_id)
+  def self.student_data user_id
+     User.select('users.id,users.email').where("id=?",user_id)
   end
 
-  def self.insert_answer student_data
+  def self. insert_answer student_data
      student_data.each do |key,value|
       value.each do |question,option|
          answer = Score.new(:student_id=>key,:question_id=>question,:option=>option)
          answer.save!
       end
     end
+  end
+
+  def self.fetch_users
+    User.all
   end
 
 end

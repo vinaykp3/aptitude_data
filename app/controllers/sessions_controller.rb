@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController
 
+  def index
+    render new_user_session_path
+  end
+
   def new
     @user = Student.new
   end
@@ -11,7 +15,7 @@ class SessionsController < ApplicationController
       redirect_to  student_result_questions_path(student_id: user.id)
       flash[:success] = "Signed in successfully"
     else
-      flash[:danger] = "Sorry"
+      flash[:danger] = "You should sign up before Signing In"
       render 'new'
     end
   end

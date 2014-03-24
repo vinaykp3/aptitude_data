@@ -1,13 +1,12 @@
 Interview::Application.routes.draw do
+
+  devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   #match '/show', to: 'scores#show', via: 'get'
-
-  get "/signin", to:"sessions#new"
-
-  post "/signin", to: "sessions#create"
 
   resources :questions do
    get "student_answer",:on=>:collection
@@ -15,6 +14,7 @@ Interview::Application.routes.draw do
    get "excel_generate",:on=>:collection
    get "student_result",:on=>:collection
    get "fetch_topic_for_questions",:on=>:collection
+   get "select_topic",:on=>:collection
   end
 
   resources :scores ,:except => [:show,:destroy,:edit,:update] do
@@ -22,7 +22,10 @@ Interview::Application.routes.draw do
   end
 
   resources :students
-  resources :topics
+
+  resources :topics do
+    get "fetch_topic",:on => :collection
+  end
 
     root "students#index"
 

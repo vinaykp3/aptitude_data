@@ -493,7 +493,9 @@ cite {
   text-align: right;
 }
 .text-center {
+
   text-align: center;
+  font-weight: bold;
 }
 .text-justify {
   text-align: justify;
@@ -3078,7 +3080,7 @@ input[type="button"].btn-block {
    margin: 0px auto;
   display: block;
   background-color: #c4e3f3;
-  padding: 3px 20px;
+  padding: 9px 20px;
   /*font-size: 16px;*/
   line-height: 1.42857143;
   color: #999;

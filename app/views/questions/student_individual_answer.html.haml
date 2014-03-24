@@ -6,16 +6,16 @@
     %th Answer
     %th Option
 
-  - @student.each do |individual_answer|
+  - @student_individual_answer.each do |student_individual_answer|
     %tr
       %td
-        =individual_answer.topic_name
+        =student_individual_answer.topic_name
       %td
-        =individual_answer.question
+        =student_individual_answer.question
       %td
-        =individual_answer.answer
+        =student_individual_answer.answer
       %td
-        =individual_answer.option
+        =student_individual_answer.option
 %p
 =link_to "Back",student_answer_questions_path
 %br

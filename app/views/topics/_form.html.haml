@@ -1,18 +1,17 @@
-.topic-form
+.topic_main_container
   = form_for @topic,url:{action: :create} do |f|
-    %p.text-center
-      =f.label :topic_name,"Topic Name "
-    %p
-      =f.text_field :topic_name,:placeholder=>"Name",class:"form-control"
-    %p
-      =f.text_field :description,:placeholder=>"Description",class:"form-control"
-    %p
-      =f.submit "Save Topic", class:"btn btn-info"
-.topic-form
-  =form_tag topics_path ,:method=>"get", :remote=> true do
-    =text_field_tag :search,params[:search],class:"form-control"
     %br
-      =submit_tag "Search",:id => "search",:name=>nil, class:"btn btn-info", :onclick => "topics_result_list('topics/new');"
-#result_list_for_topics.topic-form
-
-
+    %p.topic_container
+      =f.label :topic_name,"Topic Name",class: "topic-form-label"
+      =f.text_field :topic_name,class:"topic-form-control"
+      =f.label :description,"Description",class: "topic-form-label"
+      =f.text_field :description,class:"topic-form-control"
+    %p.topic_container
+      =f.submit "Save ", class:"btn btn-info"
+.topic_main_container
+  =form_tag topics_path ,:method=>"get", :remote=> true do
+    =text_field_tag :search,params[:search],class:"form-control",:placeholder=>"Search for topic"
+    %br
+      =submit_tag "Search",:name=>nil, class:"btn btn-info"
+    %br
+#result_list_for_topics

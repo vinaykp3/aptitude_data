@@ -1,0 +1,15 @@
+%table.table.table-striped.table-hover
+  %tr
+    %th Name
+    %th Email
+    %th{colspan:2}Sign Up Date Time
+    - @student_answer.each do |candidate_answer|
+      %tr
+        %td
+          =candidate_answer.username
+        %td
+          =candidate_answer.email
+        %td
+          =(candidate_answer.created_at).strftime("%B %d %Y")
+        %td
+          =link_to "Answer Details",student_individual_answer_questions_path(:student_id =>"#{candidate_answer.id}")

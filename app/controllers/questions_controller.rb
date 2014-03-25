@@ -47,6 +47,8 @@ class QuestionsController < ApplicationController
 
   def student_answer
     @student_answer = Question.fetch_answer
+    @student_search = User.search(params[:search])
+
   end
 
   def student_individual_answer
@@ -76,6 +78,9 @@ class QuestionsController < ApplicationController
    @topic_id = Question.fetch_topic
  end
 
+  def dashboard_admin
+    @admin = Question.dashboard_admin
+  end
 
   private
   def question_params

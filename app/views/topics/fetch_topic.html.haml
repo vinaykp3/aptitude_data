@@ -1,0 +1,18 @@
+%table.table.table-striped.table-hover
+  %tr
+    %h4
+      Topic Name: #{@topic_id.first.topic_name}
+    %th Question
+    %th{:colspan => 0}Options A
+    %th Options B
+    %th Options C
+    %th Answer
+  -@topic_id.each do |topic|
+    %tr
+      %td=topic.question
+      %td=topic.option_a
+      %td=topic.option_b
+      %td=topic.option_c
+      %td=topic.answer
+
+=link_to "Back",new_topic_path

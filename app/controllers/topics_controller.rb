@@ -45,7 +45,7 @@ load_and_authorize_resource
 
   def fetch_topic
     @topic_id = Topic.fecth_topic params[:topic_id]
-    render :partial => 'topics/fetch_topic'
+
   end
 
   private

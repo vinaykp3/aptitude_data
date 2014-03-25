@@ -21,6 +21,7 @@ class ScoresController < ApplicationController
 
 
   def test_saved
+    @user_id = current_user.username.capitalize
     @number_of_correct_answers = Score.number_of_correct_answers params[:user_id]
     @number_of_attempted_questions = Score.number_of_attempted_questions params[:user_id]
     @number_of_questions = Question.number_of_questions params[:topic_id]

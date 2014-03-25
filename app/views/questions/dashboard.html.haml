@@ -1,0 +1,9 @@
+%table.table.table-striped.table-hover
+  %tr
+    %th Name
+    %th Email
+    %th{colspan:2}Sign Up Date Time
+  - @admin.each do |details|
+    %tr
+      %td
+        =details.id

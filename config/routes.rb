@@ -15,6 +15,7 @@ Interview::Application.routes.draw do
    get "student_result",:on=>:collection
    get "fetch_topic_for_questions",:on=>:collection
    get "select_topic",:on=>:collection
+   get "dashboard",:on=>:collection
   end
 
   resources :scores ,:except => [:show,:destroy,:edit,:update] do

@@ -7,31 +7,31 @@
     %ul
     =@question.errors.full_messages do |msg|
       %li= msg
-
   .form-button
     %p
       =f.label :Question,class: :input_note
       =f.text_area :question,class:"form-control"
-  .clear_cls
     %p
       =f.label :Option_a
       =f.text_field :option_a,class:"form-control"
-  .clear_cls
     %p
       =f.label :Option_b,class: :input_note
       =f.text_field :option_b,class:"form-control"
-  .clear_cls
     %p
       =f.label :Option_c,class: :input_note
       =f.text_field :option_c,class:"form-control"
-  .clear_cls
+    %p
+      =f.label :answer,"Correct Answers"
+    %p
+      =f.radio_button :answer,"a"
+      =f.radio_button :answer,"b"
+      =f.radio_button :answer,"c"
     %p
       =f.label :Answer,class: :input_note
-      =f.text_field :answer,class:"form-control"
-  .clear_cls
+      =f.text_area :answer,class:"form-control"
     %p
-      =f.label :topic_id,"Category",class: :input_note
-      = f.select :topic_id, options_from_collection_for_select(Topic.all,"id","topic_name"),class:"btn btn-info"
+      =f.label :topic_id,"Topics"
+      = f.select :topic_id, options_from_collection_for_select(Topic.all,"id","topic_name")
   %p
     = f.submit "Save",class:"btn btn-info"
 .cls

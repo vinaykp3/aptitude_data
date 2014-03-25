@@ -8,7 +8,7 @@ class Question < ActiveRecord::Base
 
 
   def self.fetch_answer
-    User.select("id,username,email")
+    User.select("id,username,email,created_at")
   end
 
   def self.fetch_student_details params
@@ -57,5 +57,10 @@ class Question < ActiveRecord::Base
   def self.fetch_topic
     Topic.all
   end
+
+  def self.dashboard_admin
+    User.select("id,username,email,created_at")
+  end
+
 
 end

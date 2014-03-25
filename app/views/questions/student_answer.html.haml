@@ -1,13 +1,8 @@
-%table.table.table-striped.table-hover
-  %tr
-    %th Name
-    %th Email
-    - @student_answer.each do |student_answer|
-      %tr
-        %td
-          =student_answer.username
-        %td
-          =student_answer.email
-          =link_to "Answer Details",student_individual_answer_questions_path(:student_id =>"#{student_answer.id}")
-          =link_to "Destroy",student_path(student_answer),
-                method: :delete,data:{confirm:'Are you sure ?'}
+%h4
+  Candidates list :
+=form_tag student_answer_questions_path,:method=>"get", :remote=> true do
+  =text_field_tag :search,params[:search],class:"form-control",:placeholder=>"Search"
+  %br
+    =submit_tag "Search",:name=>nil, class:"btn btn-info"
+#result_list_for_topics
+

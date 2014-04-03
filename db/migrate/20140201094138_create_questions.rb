@@ -7,6 +7,8 @@ class CreateQuestions < ActiveRecord::Migration
       t.text :option_a
       t.text :option_b
       t.text :option_c
+      t.text :answer
+      t.integer :topic_id
       t.timestamps
     end
   end

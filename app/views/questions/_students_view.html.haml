@@ -2,7 +2,8 @@
   %tr
     %th Name
     %th Email
-    %th{colspan:2}Sign Up Date Time
+    %th Sign Up Date Time
+    %th{colspan:2} Score
     - @student_answer.each do |candidate_answer|
       %tr
         %td
@@ -12,4 +13,10 @@
         %td
           =(candidate_answer.created_at).strftime("%B %d %Y")
         %td
-          =link_to "Answer Details",student_individual_answer_questions_path(:student_id =>"#{candidate_answer.id}")
+          =@number_of_correct_answers["#{candidate_answer.id}"]
+          &nbsp/
+          =@number_of_questions["#{candidate_answer.id}"]
+
+        %td
+          =link_to "View Answer",student_individual_answer_questions_path(:student_id =>"#{candidate_answer.id}")
+=hidden_field_tag "topic_id",@topic_id

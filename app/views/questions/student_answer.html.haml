@@ -1,8 +1,9 @@
-%h4
-  Candidates list :
+%h4.text-info
+  Candidates lists :
 =form_tag student_answer_questions_path,:method=>"get", :remote=> true do
-  =text_field_tag :search,params[:search],class:"form-control",:placeholder=>"Search"
-  %br
-    =submit_tag "Search",:name=>nil, class:"btn btn-info"
+  =text_field_tag :search,params[:search],class:"search-form-control",:placeholder=>"Search for candidates"
+  %p
+  =submit_tag "Search",:name=>nil, class:"btn btn-info"
 #result_list_for_topics
-
+  =hidden_field_tag "topic_id",@topic_id
+  =hidden_field_tag "user_id", @user_id

@@ -1,15 +1,21 @@
 %table.table.table-striped.table-hover
   %tr
-    %th Id
     %th Topic Name
-    %th Created_at
-    %th{:colspan => 7}Options
+    %th Description
+    %th Created/Modified Date
+    %th No.Questions
+    %th{:colspan =>9}Operation
   -@topics.each do |topic|
     %tr
-      %td=topic.id
-      %td=topic.topic_name
-      %td=topic.created_at
+      %td=topic.topic_name.capitalize
+      %td=topic.description.capitalize
+      %td=topic.created_at.strftime("%B / %m / %y")
+      %td
+        =@number_of_questions["#{topic.id}"]
       %td= link_to 'View Questions',fetch_topic_topics_path(:topic_id=>topic.id)
       %td= link_to 'Edit',edit_topic_path(topic)
       %td= link_to 'Destroy', topic_path(topic),
                   method: :delete, data: { confirm: 'Are you sure?'}
+
+
+-#devise_for :users, :controllers => { :registrations => 'registrations' }, :path => 'accounts', :path_names => { :sign_in => 'login', :sign_up => 'new', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification' }

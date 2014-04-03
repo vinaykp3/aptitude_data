@@ -1,9 +1,9 @@
-%p
-  %strong Topic Name:
-  =@topic.topic_name
-%p
-  %strong Topic Name:
-  =@topic.description
-
 %br
-  = link_to 'BACK',topics_path
+  %p
+    %strong Topic Name:
+    =@topic.topic_name.capitalize
+  %p
+    %strong Description
+    =@topic.description.capitalize
+  %br
+    = link_to 'Back',:back

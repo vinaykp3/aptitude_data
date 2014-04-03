@@ -2,7 +2,7 @@
   %br
   %p
     %storng Sl.no:
-    =@question.sl_no
+    =@question.id
   %p
     %strong Question:
     =@question.question
@@ -15,4 +15,4 @@
     %strong Answer
     =@question.answer
 %br
-  = link_to 'BACK',questions_path
+  = link_to 'Back',questions_path

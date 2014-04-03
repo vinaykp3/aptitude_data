@@ -20,6 +20,7 @@ Interview::Application.routes.draw do
 
   resources :scores ,:except => [:show,:destroy,:edit,:update] do
     get "test_saved",:on => :collection
+    get "display",:on => :collection
   end
 
   resources :students

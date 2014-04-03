@@ -1,9 +1,31 @@
-%table.list-group
+.topic_main_container
   %p
-    %tr
-      %td.list-group-item
-        %strong Name:
-        #{@user_id}
+    .first_topic_container
+      %table.table.table-striped.table-hover
+        %tr
+          %th Topic Name
+          %th Name
+          %th Email
+          %th Test Taken Time
+          %th Duration
+          -@final_time = @time.first.time_taken
+          -duration = @final_time.split(/:/)
+          -final_time = duration[1].to_i
+          -@final_test_time = 60 - final_time
+
+          -@candidate_details.each do |details|
+            %tr
+              %td
+                #{@topic_name.first.topic_name.capitalize}
+              %td
+                =details.username.capitalize
+              %td
+                =details.email
+              %td
+                =details.created_at.strftime("%B %m %y")
+              %td
+                #{@final_test_time} sec
+.second_topic_container
   %p
     %tr
       %td.list-group-item
@@ -24,8 +46,15 @@
       %td.list-group-item
         %strong Total No. of Correct Answers:
         #{@number_of_correct_answers}
+  -#%p
+  -#  %tr
+  -#    %td.list-group-item
+  -#      %strong Total No. of Wrong Answers:
+  -#      #{@number_of_attempted_questions-@number_of_correct_answers}
   %p
     %tr
       %td.list-group-item
-        %strong Total No. of Wrong Answers:
-        #{@number_of_attempted_questions-@number_of_correct_answers}
+        %strong Score :
+        #{(@number_of_correct_answers)}/#{(@number_of_questions)}
+  =hidden_field_tag "topic_id",@topic_id
+

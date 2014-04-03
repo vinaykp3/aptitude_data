@@ -8,7 +8,7 @@
     %th{:colspan => 7}Answers
   - @question.each do |option|
     %tr
-      %td= option.sl_no
+      %td= option.id
       %td= option.question
       %td= option.option_a
       %td= option.option_b
@@ -21,4 +21,4 @@
         %td= link_to 'Destroy', question_path(option),
             method: :delete, data: { confirm: 'Are you sure?'}
 %p
-  = link_to "Add Question", new_question_path
+  = link_to "Add Questions", new_question_path

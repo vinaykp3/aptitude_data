@@ -1,17 +1,21 @@
 .topic_main_container
-  = form_for @topic,url:{action: :create} do |f|
+  = form_for @topic do |f|
     %br
-    %p.topic_container
-      =f.label :topic_name,"Topic Name",class: "topic-form-label"
-      =f.text_field :topic_name,class:"topic-form-control"
-      =f.label :description,"Description",class: "topic-form-label"
-      =f.text_field :description,class:"topic-form-control"
-    %p.topic_container
-      =f.submit "Save ", class:"btn btn-info"
-.topic_main_container
+    .first_topic_container
+      .topic-container-form
+        .topic-form-input
+          =f.label :topic_name,"Topic Name",class: "topic-form-label"
+          =f.text_field :topic_name,class:"topic-form-control"
+        .topic-form-input
+          =f.label :description,"Description",class: "topic-form-label"
+          =f.text_field :description,class:"topic-form-control"
+
+        =f.submit "Save ", class:"topic-btn-info"
+.second_topic_container
   =form_tag topics_path ,:method=>"get", :remote=> true do
     =text_field_tag :search,params[:search],class:"form-control",:placeholder=>"Search for topic"
     %br
-      =submit_tag "Search",:name=>nil, class:"btn btn-info"
+      =submit_tag "Search",:name=>nil, class:"topic-search-btn-info"
     %br
-#result_list_for_topics
+      =hidden_field_tag "topic_id",@topic_id
+  #result_list_for_topics

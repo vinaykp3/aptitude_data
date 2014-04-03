@@ -20,9 +20,9 @@
             %li
               -#= link_to "View Answer",student_answer_questions_path
               = non_restfull_link Question,:destroy,"Candidates",student_answer_questions_path
-            %li
-              -#= link_to "View Answer",student_answer_questions_path
-              = non_restfull_link Question,:destroy,"Dashboard",dashboard_questions_path
+            -#%li
+            -#  -#= link_to "View Answer",student_answer_questions_path
+            -#  = non_restfull_link Question,:destroy,"Dashboard",dashboard_questions_path
               %li.divider
         %ul
           - if user_signed_in?

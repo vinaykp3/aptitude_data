@@ -7,8 +7,7 @@ class QuestionsController < ApplicationController
   end
 
   def index
-
-     @question = Question.all
+     @question = Question.index
   end
 
   def create
@@ -17,7 +16,7 @@ class QuestionsController < ApplicationController
       flash[:success] = "Question has been successfully saved"
       redirect_to action: :index
     else
-      render nothing: true
+      render 'new'
     end
   end
 
@@ -46,14 +45,26 @@ class QuestionsController < ApplicationController
 
 
   def student_answer
-    @student_answer = Question.fetch_answer
+    @student_answer = Question.students_details
     @student_search = User.search(params[:search])
+    @topic = Topic.all
+
+    params[:student_id] = @student_answer
+    params[:topic_id] = @topic
+    #
+    #@number_of_correct_answers = Score.number_of_correct_answers params[:student_id]
+    #@number_of_questions = Question.number_of_questions params[:topic_id]
+
+    @number_of_questions = Question.number_of_questions_in_topic params[:topic_id]
+
+    @number_of_correct_answers = Score.number_of_correct_answers_for_student params[:student_id]
 
   end
 
   def student_individual_answer
+    @student_id = params[:student_id]
     @student_individual_answer = Question.fetch_student_details params
-
+    @topic_id = @student_individual_answer.first.topic_id
   end
 
   def excel_generate

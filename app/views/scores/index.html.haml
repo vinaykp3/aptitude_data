@@ -1,8 +1,5 @@
-%h3.text-center
-  Running Counter
-  %span#countdown.timer
 :javascript
-  var seconds = 120;
+  var seconds = 60;
   function secondPassed() {
       var minutes = Math.round((seconds - 30)/60);
       var remainingSeconds = seconds % 60;
@@ -10,16 +7,22 @@
           remainingSeconds = "0" + remainingSeconds;
       }
       document.getElementById('countdown').innerHTML = minutes + " Min" + ":" + remainingSeconds + " Sec";
-      if (seconds == 0) {
+
+      if (seconds == 0)
+       {
           clearInterval(countdownTimer);
-          document.getElementById('countdown').innerHTML = "Buzz Buzz";
-      } else {
+          document.getElementById('countdown').innerHTML = "Time Up";
+      } else
+      {
           seconds--;
       }
   }
-  var countdownTimer = setInterval('secondPassed()', 1000);
+  var countdownTimer = setInterval('secondPassed()',1000);
 
 =form_tag @score do
+  %h3.text-center
+    Running Counter
+    =text_area_tag "time_taken", "", :id=>"countdown", :class=>"timer", :resize=>"none"
   .question_container
     %h4.text-info
       Topic Name : #{@score1.first.topic_name}
@@ -28,18 +31,19 @@
       %h4
         %tr{:colspan=>1}#{option.sl_no}.#{option.question}
       %ul
-        %li.bold_txt
-          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_a}"
-          =option.option_a
-        %li.bold_txt
-          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_b}"
-          =option.option_b
-        %li.bold_txt
-          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_c}"
-          =option.option_c
+      %li.bold_txt
+        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_a}"
+        =option.option_a
+      %li.bold_txt
+        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_b}"
+        =option.option_b
+      %li.bold_txt
+        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_c}"
+        =option.option_c
         %td
-          =hidden_field_tag "topic_id", @topic_id
-%td
+          =hidden_field_tag "topic_id",@topic_id
+          =hidden_field_tag "user_id", @user_id
+  %p
   =submit_tag "Finish Answer",class:"btn btn-info"
   %br
     %strong

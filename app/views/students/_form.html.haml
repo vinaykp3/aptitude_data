@@ -5,8 +5,8 @@
         =pluralize(@student.errors.count,'error')
         Prohibited to save student details
       %ul
-        =@student.errors.full_messages do |msg|
-          %li= msg
+      =@student.errors.full_messages do |msg|
+        %li= msg
     #form-button
       %p.text-center.signin_header
         =f.label "Enter details for student to take Test",class: :input_note1

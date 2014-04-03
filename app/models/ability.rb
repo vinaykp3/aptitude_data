@@ -10,6 +10,7 @@ class Ability
     else
       can [:read,:create],:all
       can :test_saved,Score
+      can :display,Score
       can :student_result,Question
       can :select_topic,Question
       cannot :create,Question

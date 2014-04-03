@@ -4,12 +4,12 @@
     %th Topic
     %th Question
     %th Answer
-    %th Option
+    %th Candidate Answer
 
   - @student_individual_answer.each do |student_individual_answer|
     %tr
       %td
-        =student_individual_answer.topic_name
+        =student_individual_answer.topic_name.capitalize
       %td
         =student_individual_answer.question
       %td
@@ -17,6 +17,10 @@
       %td
         =student_individual_answer.option
 %p
-=link_to "Back",student_answer_questions_path
+  =hidden_field "user_id",@user_id
+%p
+=link_to "Score",test_saved_scores_path(:user_id=>params[:student_id], :topic_id => @topic_id)
 %br
 =link_to "Download the Excel sheet",excel_generate_questions_path(format: "xlsx",student_id: params[:student_id])
+%p
+=link_to "Back",student_answer_questions_path

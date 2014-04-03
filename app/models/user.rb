@@ -12,10 +12,23 @@ class User < ActiveRecord::Base
 
   def self.search(search)
     if search
-      find(:all,:conditions=>['username LIKE ?',"%#{search}%"])
+      find(:all,:conditions=>['username ILIKE ?',"%#{search}%"])
     else
       find(:all)
     end
+  end
+
+  def self.score_search(search)
+    if search
+      joins("INNER JOIN scores ON scores.user_id = users.id INNER JOIN questions ON questions.id=scores.question_id").where("username ILIKE ?",search)
+    else
+      joins("INNER JOIN scores ON scores.user_id = users.id INNER JOIN questions ON questions.id=scores.question_id")
+    end
+  end
+
+
+  def self.candidate_details user_id
+    User.select("username,email,created_at").where("id=?",user_id)
   end
 
 end

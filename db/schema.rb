@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140322053059) do
+ActiveRecord::Schema.define(version: 20140317111817) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "questions", force: true do |t|
     t.text     "sl_no"
@@ -22,13 +23,11 @@ ActiveRecord::Schema.define(version: 20140322053059) do
     t.text     "option_a"
     t.text     "option_b"
     t.text     "option_c"
+    t.text     "answer"
+    t.integer  "topic_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "answer"
-    t.integer  "topic_id"
   end
-
-  add_index "questions", ["topic_id"], name: "index_questions_on_topic_id", using: :btree
 
   create_table "roles", force: true do |t|
     t.datetime "created_at"
@@ -46,9 +45,10 @@ ActiveRecord::Schema.define(version: 20140322053059) do
   add_index "roles_users", ["role_id", "user_id"], name: "index_roles_users_on_role_id_and_user_id", using: :btree
 
   create_table "scores", force: true do |t|
-    t.integer  "student_id"
+    t.integer  "user_id"
     t.integer  "question_id"
     t.string   "option"
+    t.string   "time_taken"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -61,21 +61,13 @@ ActiveRecord::Schema.define(version: 20140322053059) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "admin",           default: false
-  end
-
-  create_table "topic_questions", force: true do |t|
-    t.integer  "question_id"
-    t.integer  "topic_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "topics", force: true do |t|
     t.string   "topic_name"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "description"
   end
 
   create_table "users", force: true do |t|

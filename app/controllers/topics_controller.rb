@@ -4,12 +4,11 @@ load_and_authorize_resource
 
   def index
     @topics = Topic.search(params[:search])
-
+    @number_of_questions = Question.number_of_questions_in_topic @topics
   end
 
   def new
     @topic = Topic.new
-
   end
 
   def create
@@ -37,7 +36,8 @@ load_and_authorize_resource
 
   def update
     @topic = Topic.find(params[:id])
-      if @question.update(topic_params)
+      if @topic.update(topic_params)
+        redirect_to @topic
       else
         render 'edit'
       end
@@ -45,7 +45,6 @@ load_and_authorize_resource
 
   def fetch_topic
     @topic_id = Topic.fecth_topic params[:topic_id]
-
   end
 
   private

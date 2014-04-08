@@ -1,15 +1,12 @@
 %p
 %table.table.table-striped.table-hover
   %tr
-    %th Topic
+    %h4.text-info Topic Name:#{@student_individual_answer.first.topic_name.capitalize}
     %th Question
     %th Answer
     %th Candidate Answer
-
   - @student_individual_answer.each do |student_individual_answer|
     %tr
-      %td
-        =student_individual_answer.topic_name.capitalize
       %td
         =student_individual_answer.question
       %td

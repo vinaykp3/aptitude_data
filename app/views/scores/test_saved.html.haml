@@ -22,7 +22,7 @@
               %td
                 =details.email
               %td
-                =details.created_at.strftime("%B %m %y")
+                =(details.created_at).strftime("%B %m %y")
               %td
                 #{@final_test_time} sec
 .second_topic_container
@@ -46,11 +46,11 @@
       %td.list-group-item
         %strong Total No. of Correct Answers:
         #{@number_of_correct_answers}
-  -#%p
-  -#  %tr
-  -#    %td.list-group-item
-  -#      %strong Total No. of Wrong Answers:
-  -#      #{@number_of_attempted_questions-@number_of_correct_answers}
+  %p
+    %tr
+      %td.list-group-item
+        %strong Total No. of Wrong Answers:
+        #{@number_of_attempted_questions-@number_of_correct_answers}
   %p
     %tr
       %td.list-group-item

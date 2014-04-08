@@ -1,20 +1,14 @@
-%p
-  Listing all Question
+%h4.text-muted
+  Listing of all Questions :
 %table.table.table-striped.table-hover
   %tr
-    %th Sl_no
+    %th Id
     %th Question
-    %th Options
-    %th{:colspan => 7}Answers
+    %th{:colspan => 4}Opertions
   - @question.each do |option|
     %tr
       %td= option.id
       %td= option.question
-      %td= option.option_a
-      %td= option.option_b
-      %td= option.option_c
-      %td= option.answer
-
       %td= link_to 'Show', question_path(option)
       %td= link_to 'Edit', edit_question_path(option)
       -if can? :destroy,option

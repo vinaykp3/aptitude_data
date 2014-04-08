@@ -30,7 +30,7 @@
     =f.text_area :answer,class:"form-control"
   %p
     =f.label :topic_id,"Topics"
-    = f.select :topic_id, options_from_collection_for_select(Topic.all,"id","topic_name")
+    = f.select :topic_id,options_from_collection_for_select(Topic.all,"id","topic_name")
   %p
     = f.submit "Save",class:"btn btn-info"
   .cls

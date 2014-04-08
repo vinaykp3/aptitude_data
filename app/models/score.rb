@@ -3,9 +3,11 @@ class Score < ActiveRecord::Base
   belongs_to :question
   belongs_to :user
 
+  validates :user_id,:question_id,:option,presence: true
+
   def self.number_of_correct_answers student_id
-    #Score.joins("INNER JOIN questions ON questions.answer=scores.option").where("student_id=?",student_id).count
-    Score.joins("INNER JOIN questions ON questions.id=scores.question_id").where("user_id=?",student_id).count
+    Score.joins("INNER JOIN questions ON questions.answer=scores.option").where("user_id=?",student_id).count
+    #Score.joins("INNER JOIN questions ON questions.id=scores.question_id").where("user_id=?",student_id).count
   end
 
   def self.number_of_attempted_questions user_id
@@ -25,10 +27,13 @@ class Score < ActiveRecord::Base
       value.each do |question,option|
         @student_id = key
         @question_id = question
-         @option = option
+        @option = option
+        answer = Score.new(:user_id=>@student_id,:question_id=>@question_id,:option=>@option,:time_taken=>time)
+        answer.save!
       end
      end
-     answer = Score.create(:user_id=>@student_id,:question_id=>@question_id,:option=>@option,:time_taken=>time)
+
+
   end
 
   def self.calculate_final_time time
@@ -46,6 +51,11 @@ class Score < ActiveRecord::Base
       correct["#{ids}"] = Score.joins("INNER JOIN questions ON questions.answer=scores.option").where("user_id=?",student.id).count()
     end
     correct
+  end
+
+  def self.select_topic topic
+    Topic.select("topics.id,topics.topic_name").where("id=?",topic)
+
   end
 
 end

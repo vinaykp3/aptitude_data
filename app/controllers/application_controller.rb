@@ -23,6 +23,11 @@ class ApplicationController < ActionController::Base
     flash[:danger] = "Access denied."
     redirect_to root_url
   end
+  #
+  #rescue_from Score::NoMethodError do |exception|
+  #  flash[:danger]="please select options"
+  #  redirect_to scores_path
+  #end
 
 end
 

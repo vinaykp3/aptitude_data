@@ -19,34 +19,47 @@
   }
   var countdownTimer = setInterval('secondPassed()',1000);
 
-=form_tag @score do
+  function validate_answer_selected()
+  {
+    if($(".selected ").is(":checked"))
+    {
+      return true;
+    }
+    else
+    {
+      alert("You have not selected any answers.")
+      return false;
+    }
+  }
+
+=form_tag @score, :onsubmit=>"return validate_answer_selected();" do
   %h3.text-center
-    Running Counter
-    =text_area_tag "time_taken", "", :id=>"countdown", :class=>"timer", :resize=>"none"
+    .counter Running Counter
+    =text_area_tag "time_taken", "",:id=>"countdown"  , :resize=>"none",:class=>"textarea"
   .question_container
     %h4.text-info
-      Topic Name : #{@score1.first.topic_name}
-  -@score1.each do |option|
-    .question_container
-      %h4
-        %tr{:colspan=>1}#{option.sl_no}.#{option.question}
-      %ul
-      %li.bold_txt
-        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_a}"
-        =option.option_a
-      %li.bold_txt
-        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_b}"
-        =option.option_b
-      %li.bold_txt
-        =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_c}"
-        =option.option_c
-        %td
-          =hidden_field_tag "topic_id",@topic_id
-          =hidden_field_tag "user_id", @user_id
+      Topic Name : #{@score1.first.topic_name.capitalize}
+      .question_container
+    -@score1.each do |option|
+      .question_container
+        %h4
+          %tr{:colspan=>1}#{option.id}.#{option.question}
+        %li.bold_txt
+          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_a}", false, :class=>"selected"
+          =option.option_a
+        %li.bold_txt
+          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_b}", false, :class=>"selected"
+          =option.option_b
+        %li.bold_txt
+          =radio_button_tag "data[#{@user_id}][#{option.id}]", "#{option.option_c}", false, :class=>"selected"
+          =option.option_c
+          %td
+            =hidden_field_tag "topic_id",@topic_id
+            =hidden_field_tag "user_id", @user_id
   %p
   =submit_tag "Finish Answer",class:"btn btn-info"
   %br
-    %strong
+    %strong.space
       Note :
       Once you finished you will not able to changed the answer
 

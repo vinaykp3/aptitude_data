@@ -1,18 +1,16 @@
-#form-container
-  %br
-  %p
-    %storng Sl.no:
-    =@question.id
-  %p
-    %strong Question:
-    =@question.question
-  %p
-    %strong Options:
-    %li=@question.option_a
-    %li=@question.option_b
-    %li=@question.option_c
-  %p
-    %strong Answer
-    =@question.answer
+%p
+  %storng Id:
+  =@question.id
+%p
+  %strong Question:
+  =@question.question
+%p
+  %strong Options:
+  %li=@question.option_a
+  %li=@question.option_b
+  %li=@question.option_c
+%p
+  %strong Answer
+  =@question.answer
 %br
   = link_to 'Back',questions_path

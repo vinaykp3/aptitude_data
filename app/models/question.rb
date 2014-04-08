@@ -9,9 +9,9 @@ class Question < ActiveRecord::Base
 
   scope :index,lambda {order("created_at DESC")}
 
-  def self.students_details
-    User.select("id,username,email,created_at")
-    #User.select("users.id,username,email,users.created_at,question_id").joins("INNER JOIN scores ON scores.student_id = users.id")
+  def self. students_details
+    #User.select("id,username,email,created_at")
+    User.select("users.id,username,email,users.created_at,question_id").joins("INNER JOIN scores ON scores.user_id = users.id")
   end
 
   def self.fetch_id
@@ -19,14 +19,15 @@ class Question < ActiveRecord::Base
   end
 
   def self.fetch_student_details params
-    Question.select("questions.question,questions.answer,scores.option,topics.topic_name,topics.description, topics.id as topic_id").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.user_id=? ",params[:student_id])
+    Question.select("questions.id,questions.question,questions.answer,scores.option,topics.topic_name,topics.description, topics.id as topic_id").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.user_id=? ",params[:student_id])
+
   end
 
   def self.student_excel params
     require 'axlsx'
     package = Axlsx::Package.new
     wb = package.workbook
-    question_details = Question.select("questions.question,questions.answer,scores.option,topics.topic_name,topics.description, topics.id as topic_id").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.student_id=? ",params[:student_id])
+    question_details = Question.select("questions.question,questions.answer,scores.option,topics.topic_name,topics.description, topics.id as topic_id").joins("INNER JOIN scores ON questions.id=scores.question_id INNER JOIN topics ON topics.id=questions.topic_id ").where("scores.user_id=? ",params[:student_id])
     wb.styles do |s|
       normal_cell =  s.add_style(:bg_color => "CEE0DF",:b => true,:fg_color => "00", :sz => 10, :border => Axlsx::STYLE_THIN_BORDER,:alignment => { :horizontal=> :center })
       bold_cell = s.add_style(:b => true, :sz => 10,:border => Axlsx::STYLE_THIN_BORDER)
@@ -89,6 +90,6 @@ class Question < ActiveRecord::Base
 
   def self.number_of_correct_answers student_id
     #Score.select(" question.topic_id,question.asnwer").joins(" IINER JOIN questions ON questions.answer=scores.option")..where("student_id=?",student_id).count
-    Score.joins("INNER JOIN questions ON questions.answer=scores.option").where("student_id=?",student_id).count
+    Score.joins("INNER JOIN questions ON questions.answer=scores.option").where("user_id=?",student_id).count
   end
 end

@@ -19,9 +19,9 @@
   %p
     =f.label :Option_c,class: :input_note
     =f.text_field :option_c,class:"form-control"
-  %p
-    =f.label :answer,"Correct Answers"
   -#%p
+  -#  =f.label :answer,"Correct Answers"
+  -#-#%p
   -#  =f.radio_button :answer,"a"
   -#  =f.radio_button :answer,"b"
   -#  =f.radio_button :answer,"c"
@@ -29,7 +29,8 @@
     =f.label :Answer,class: :input_note
     =f.text_area :answer,class:"form-control"
   %p
-    =f.label :topic_id,"Topics"
+    =f.label :topic_id,"Topics :"
+  %p
     = f.select :topic_id,options_from_collection_for_select(Topic.all,"id","topic_name")
   %p
     = f.submit "Save",class:"btn btn-info"

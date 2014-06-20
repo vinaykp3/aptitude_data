@@ -23,11 +23,11 @@ class ApplicationController < ActionController::Base
     flash[:danger] = "Access denied."
     redirect_to root_url
   end
-  #
-  #rescue_from Score::NoMethodError do |exception|
-  #  flash[:danger]="please select options"
-  #  redirect_to scores_path
-  #end
+
+  rescue_from Topic::NoMethodError do |exception|
+    flash[:danger]="No Questions are avaliable"
+    redirect_to new_topic_path
+  end
 
 end
 

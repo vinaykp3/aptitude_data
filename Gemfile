@@ -9,8 +9,12 @@ gem 'axlsx_rails'
 gem 'acts_as_xlsx'
 gem 'devise'
 gem 'heroku'
+gem 'sinatra', '1.1.0'
 gem "cancan", "~> 1.6.10"
 gem 'pg'
+gem 'vagrant', '~> 1.5.0'
+gem 'rspec'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -29,6 +33,7 @@ group :development, :test do
   gem 'faker', '1.1.2'
   gem 'will_paginate', '3.0.4'
   gem 'pry'
+  gem "rails-erd"
 end
 
 group :test do

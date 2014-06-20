@@ -16,7 +16,7 @@ class Topic < ActiveRecord::Base
   end
 
   def self.fecth_topic params
-    Topic.select("topic_name,description,questions.question,questions.option_a,questions.option_b,questions.option_c,questions.answer").joins(" INNER JOIN questions ON questions.topic_id=topics.id").where("questions.topic_id=? ",params)
+    Topic.select("topic_name,description,questions.question,questions.option_a,questions.option_b,questions.option_c,questions.answer ,topics.id ").joins(" INNER JOIN questions ON questions.topic_id=topics.id").where("questions.topic_id=? ",params)
   end
 
   def self.number_of_questions topic_id

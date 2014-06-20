@@ -89,9 +89,6 @@ class QuestionsController < ApplicationController
   @admin = Question.dashboard_admin
   end
 
-  #
-  #@number_of_correct_answers = Score.number_of_correct_answers params[:student_id]
-  #@number_of_questions = Question.number_of_questions params[:topic_id]
   private
   def question_params
     params.require(:question).permit(:sl_no,:question,:option_a,:option_b,:option_c,:answer,:topic_id)

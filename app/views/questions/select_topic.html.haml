@@ -7,7 +7,7 @@
       =select_tag "topic_id", options_from_collection_for_select(Topic.all,"id","topic_name"),class:"btn btn-info"
     %br
     %p.text-center
-      =submit_tag "Processed test",class:"btn btn-info"
+      =submit_tag "Processed test",:confirm=>"Are you sure you want to continue ",class:"btn btn-info"
 
   %p
     %strong Note:

@@ -26,10 +26,10 @@ class ScoresController < ApplicationController
     #  flash[:success] = "Please Select Options"
     #  render "index"
     #end
+
   end
 
   def test_saved
-
     @topic_id = params[:topic_id]
     @user_id = current_user.username
     @number_of_correct_answers = Score.number_of_correct_answers params[:user_id]

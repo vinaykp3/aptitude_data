@@ -1,7 +1,8 @@
 %table.table.table-striped.table-hover
   %tr
-    %h4
+    %h4.text-info
       Topic Name: #{@topic_id.first.topic_name.capitalize}
+    %th Id
     %th Question
     %th{:colspan => 0}Options A
     %th Options B
@@ -9,6 +10,7 @@
     %th Answer
   -@topic_id.each do |topic|
     %tr
+      %td=topic.id
       %td=topic.question
       %td=topic.option_a
       %td=topic.option_b

@@ -1,4 +1,40 @@
-%h4.text-muted
+-#<!doctype html>
+-#%html{:lang => "en"}
+-#  %head
+-#    %meta{:charset => "utf-8"}
+-#      %title jQuery UI Dialog - Modal confirmation
+-#      %link{:href => "//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css", :rel => "stylesheet"}
+-#        %script{:src => "//code.jquery.com/jquery-1.10.2.js"}
+-#        %script{:src => "//code.jquery.com/ui/1.10.4/jquery-ui.js"}
+-#        %link{:href => "/resources/demos/style.css", :rel => "stylesheet"}
+-#          :javascript
+-#            $(function() {
+-#              $( "#dialog-confirm" ).dialog({
+-#                resizable: false,
+-#                height:140,
+-#                modal: true,
+-#                buttons: {
+-#                  "Delete all items": function() {
+-#                    $( this ).dialog( "close" );
+-#                  },
+-#                  Cancel: function() {
+-#                    $( this ).dialog( "close" );
+-#                  }
+-#                }
+-#              });
+-#            });
+-#              %body
+-#    #dialog-confirm{:title => "Empty the recycle bin?"}
+-#      %p
+-#        %span.ui-icon.ui-icon-alert{:style => "float:left; margin:0 7px 20px 0;"}>
+-#        These items will be permanently deleted and cannot be recovered. Are you sure?
+-#    %p
+-#      Sed vel diam id libero
+-#      = succeed "." do
+-#        %a{:href => "http://example.com"} rutrum convallis
+-#      Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.
+
+%h4.text-info
   Listing of all Questions :
 %table.table.table-striped.table-hover
   %tr
@@ -9,10 +45,13 @@
     %tr
       %td= option.id
       %td= option.question
+
       %td= link_to 'Show', question_path(option)
       %td= link_to 'Edit', edit_question_path(option)
       -if can? :destroy,option
+        #dialog-confirm
         %td= link_to 'Destroy', question_path(option),
             method: :delete, data: { confirm: 'Are you sure?'}
 %p
   = link_to "Add Questions", new_question_path
+

@@ -105,15 +105,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/topics/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fetch_topic.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/topics/fetch_topic.html.haml">
           <provider selected="true" editor-type-id="text-editor">
@@ -186,10 +177,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140201094138_create_questions.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140201094138_create_questions.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140201094138_create_questions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.3975265" vertical-offset="0" max-vertical-offset="566">
+            <state line="15" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6243655" vertical-offset="369" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -566,14 +566,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35334346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35334346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -607,11 +607,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/projects/payroll/saral-web-payroll/app/models/reimbursement_master.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="13" selection-start="2263" selection-end="2263" vertical-scroll-proportion="0.8611111" vertical-offset="537" max-vertical-offset="1185" />
@@ -885,7 +880,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140201094138_create_questions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.3975265" vertical-offset="0" max-vertical-offset="566">
+        <state line="15" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6243655" vertical-offset="369" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>

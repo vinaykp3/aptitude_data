@@ -1,7 +1,7 @@
 .form-horizontal{:role => "form"}
   %h5.text-center
     Select any one of the options to take test:
-  =form_tag  ({controller: "scores",action:"index"}) ,method: "get"  do
+  =form_tag  ({controller: "scores",action:"index",method: "get"}) do
     =hidden_field_tag "user_id", @user_id
     %p.text-center
       =select_tag "topic_id", options_from_collection_for_select(Topic.all,"id","topic_name"),class:"btn btn-info"

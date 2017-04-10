@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.0.2'
 gem 'sass-rails', '4.0.1'
@@ -11,16 +11,17 @@ gem 'devise'
 gem 'heroku'
 gem 'sinatra', '1.1.0'
 gem "cancan", "~> 1.6.10"
-gem 'pg'
+gem "sqlite3"
+# gem 'pg'
 gem 'vagrant', '~> 1.5.0'
 gem 'rspec'
 
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
-  gem 'guard-rspec', '3.1.0'
-  gem 'spork-rails', '4.0.0'
-  gem 'guard-spork', '1.5.0'
+  # gem 'guard-rspec', '3.1.0'
+  # gem 'spork-rails', '4.0.0'
+  # gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
   gem 'factory_girl_rails'
   gem 'roo'

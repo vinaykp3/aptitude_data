@@ -13,10 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140317111817) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-  enable_extension "hstore"
-
   create_table "questions", force: true do |t|
     t.text     "sl_no"
     t.string   "question"
@@ -42,7 +38,7 @@ ActiveRecord::Schema.define(version: 20140317111817) do
     t.datetime "updated_at"
   end
 
-  add_index "roles_users", ["role_id", "user_id"], name: "index_roles_users_on_role_id_and_user_id", using: :btree
+  add_index "roles_users", ["role_id", "user_id"], name: "index_roles_users_on_role_id_and_user_id"
 
   create_table "scores", force: true do |t|
     t.integer  "user_id"
@@ -86,7 +82,7 @@ ActiveRecord::Schema.define(version: 20140317111817) do
     t.string   "username"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
